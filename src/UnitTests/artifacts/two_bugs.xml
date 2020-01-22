@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE bugzilla SYSTEM "http://bugzilla.axentra.com/bugzilla.dtd">
+<bugzilla version="3.2" urlbase="http://bugzilla.axentra.com/" maintainer="david.mccormack@axentra.com" exporter="David.McCormack@axentra.com">
+  <bug>
+          <bug_id>14947</bug_id>
+          <blocked>14963</blocked>      
+          <creation_ts>2009-08-11 14:05</creation_ts>
+          <short_desc>Welcome screen on Setup CD is stuck and freeze</short_desc>
+          <delta_ts>2009-08-11 14:26:55</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>HipServ Setup CD</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          <cf_traceability>SF1954</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-11 14:05:16</bug_when>
+            <thetext>The welcome screen "Setup is Initializing..." is stuck and we have to shut down the computer. Ctrl+Alt+Del to kill the task does not work.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-11 14:26:55</bug_when>
+            <thetext>It's working all nicely for me, all I can think of is a bad CD burn.
+
+What version of the software they're using? 1.0GM?
+
+OS version?
+
+Language of OS?
+
+Can we ask them to copy from CD to root drive (C:\setupCD for example) and run it. if it doesn't work ask them to turn on tracing by editing tracing=1 in c:\setupCD\Setup\settings.ini</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14963</bug_id>
+      <dependson>14947</dependson>
+        <dependson>14888</dependson>
+        <dependson>14894</dependson>
+      <creation_ts>2009-08-13 13:45</creation_ts>
+          <short_desc>Changes to Windows Backup to comply with new rules</short_desc>
+          <delta_ts>2009-08-15 18:31:59</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>Vista/Time Machine Backup</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Yannick Guay">yannickg@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>4.00</estimated_time>
+          <remaining_time>4.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-13 13:45:04</bug_when>
+            <thetext>The share name and username/password have changed, update the HTML to comply to it.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-15 07:37:21</bug_when>
+            <thetext>changed the help to match the new features (english only)
+http://newrome.axentra.com/viewvc/?rev=33076&amp;view=rev</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+  <bug>
+    <bug_id>14888</bug_id>
+    <blocked>14963</blocked>
+    <creation_ts>2009-08-06 09:58</creation_ts>
+    <short_desc>Display issue with cursor and "Add file" button on upload screen</short_desc>
+    <delta_ts>2009-08-07 13:14:54</delta_ts>
+    <reporter_accessible>1</reporter_accessible>
+    <cclist_accessible>1</cclist_accessible>
+    <classification_id>1</classification_id>
+    <classification>Unclassified</classification>
+    <product>Web 2.0 Interface</product>
+    <component>General</component>
+    <version>---</version>
+    <rep_platform>All</rep_platform>
+    <op_sys>All</op_sys>
+    <bug_status>NEW</bug_status>
+
+
+
+
+    <keywords>Wants-Netgear</keywords>
+    <priority>P3</priority>
+    <bug_severity>normal</bug_severity>
+    <target_milestone>Netgear 1.2</target_milestone>
+
+
+
+    <everconfirmed>1</everconfirmed>
+    <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+    <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+    <cc>richard.dault@axentra.com</cc>
+    <estimated_time>0.00</estimated_time>
+    <remaining_time>0.00</remaining_time>
+    <actual_time>0.00</actual_time>
+
+
+
+
+
+    <cf_traceability>SF1930</cf_traceability>
+
+
+    <group>Web 2.0 Interface</group>
+
+
+    <long_desc isprivate="0">
+      <who name="David McCormack">David.McCormack@axentra.com</who>
+      <bug_when>2009-08-06 09:58:10</bug_when>
+      <thetext>
+        Screenshot will be attached, red arrow shows the location of the cursor during
+        the screenshot. There is nothing under the cursor yet it is a text entry
+        cursor and the "Add File" button is lit up.
+      </thetext>
+    </long_desc>
+    <long_desc isprivate="0">
+      <who name="Richard Dault">richard.dault@axentra.com</who>
+      <bug_when>2009-08-06 10:19:29</bug_when>
+      <thetext>Same as bug 14591?</thetext>
+    </long_desc>
+
+
+
+  </bug>
+  <bug>
+    <bug_id>14894</bug_id>
+    <blocked>14963</blocked>
+    <creation_ts>2009-08-06 10:15</creation_ts>
+    <short_desc>Need to put email test button to ensure the email get sent.</short_desc>
+    <delta_ts>2009-08-06 10:15:22</delta_ts>
+    <reporter_accessible>1</reporter_accessible>
+    <cclist_accessible>1</cclist_accessible>
+    <classification_id>1</classification_id>
+    <classification>Unclassified</classification>
+    <product>Web 2.0 Interface</product>
+    <component>Preferences</component>
+    <version>---</version>
+    <rep_platform>All</rep_platform>
+    <op_sys>All</op_sys>
+    <bug_status>NEW</bug_status>
+
+
+
+
+    <keywords>Wants-Netgear</keywords>
+    <priority>P4</priority>
+    <bug_severity>enhancement</bug_severity>
+    <target_milestone>Netgear 1.2</target_milestone>
+
+
+
+    <everconfirmed>1</everconfirmed>
+    <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+    <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+    <cc>richard.dault@axentra.com</cc>
+    <estimated_time>0.00</estimated_time>
+    <remaining_time>0.00</remaining_time>
+    <actual_time>0.00</actual_time>
+
+
+
+
+
+    <cf_traceability>SF1924</cf_traceability>
+
+
+    <group>Web 2.0 Interface</group>
+
+
+    <long_desc isprivate="0">
+      <who name="David McCormack">David.McCormack@axentra.com</who>
+      <bug_when>2009-08-06 10:15:01</bug_when>
+      <thetext>
+        Currently, there is no way we can assure that email alert setting is work or
+        not. So we need a button to test email alert setting and would also recommend
+        having SMTP configuration for users who does not use standard email ports.
+
+        We have seen many ISP that does not open the standard ports so that email are
+        not being send out.
+      </thetext>
+    </long_desc>
+
+
+
+  </bug>
+  <bug>
+    <bug_id>14895</bug_id>
+
+    <creation_ts>2009-08-06 10:17</creation_ts>
+    <short_desc>Password criteria popup disappears</short_desc>
+    <delta_ts>2009-08-07 13:22:53</delta_ts>
+    <reporter_accessible>1</reporter_accessible>
+    <cclist_accessible>1</cclist_accessible>
+    <classification_id>1</classification_id>
+    <classification>Unclassified</classification>
+    <product>Web 2.0 Interface</product>
+    <component>General</component>
+    <version>---</version>
+    <rep_platform>All</rep_platform>
+    <op_sys>All</op_sys>
+    <bug_status>NEW</bug_status>
+
+
+
+
+    <keywords>Wants-Netgear</keywords>
+    <priority>P3</priority>
+    <bug_severity>normal</bug_severity>
+    <target_milestone>Netgear 1.2</target_milestone>
+
+
+
+    <everconfirmed>1</everconfirmed>
+    <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+    <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+    <cc>richard.dault@axentra.com</cc>
+    <estimated_time>0.00</estimated_time>
+    <remaining_time>0.00</remaining_time>
+    <actual_time>0.00</actual_time>
+
+
+
+
+
+    <cf_traceability>SF1923</cf_traceability>
+
+
+    <group>Web 2.0 Interface</group>
+
+
+    <long_desc isprivate="0">
+      <who name="David McCormack">David.McCormack@axentra.com</who>
+      <bug_when>2009-08-06 10:17:18</bug_when>
+      <thetext>
+        Is it possible to configure the password and confirm password boxes to say that
+        you need a number in the password the whole time till you fit the criteria. The
+        pop up goes away too quickly while typing in a password. So all you see is a
+        red box and not sure what your missing till you move your mouse over the box again.
+      </thetext>
+    </long_desc>
+    <long_desc isprivate="0">
+      <who name="Richard Dault">richard.dault@axentra.com</who>
+      <bug_when>2009-08-06 10:23:24</bug_when>
+      <thetext>Same as bug 13991 and bug 13992?</thetext>
+    </long_desc>
+
+
+
+  </bug>
+
+</bugzilla>

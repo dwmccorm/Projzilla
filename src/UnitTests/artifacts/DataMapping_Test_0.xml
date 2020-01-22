@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<!DOCTYPE ProjectMapping >
+<ProjectMapping>
+  <map>
+    <bugzilla>Id</bugzilla>
+    <msproject>Number1</msproject>
+  </map>
+  <map>
+    <bugzilla>Summary</bugzilla>
+    <msproject>Name</msproject>
+  </map>
+
+</ProjectMapping>

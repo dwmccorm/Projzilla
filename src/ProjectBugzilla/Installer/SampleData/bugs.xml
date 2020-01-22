@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE bugzilla SYSTEM "http://192.168.0.8/bugzilla/bugzilla.dtd">
+<bugzilla version="3.4.1" urlbase="http://192.168.0.8/bugzilla/" maintainer="david.mccormack@projzilla.com" exporter="david.mccormack@projzilla.com">
+
+    <bug>
+          <bug_id>1</bug_id>
+          
+          <creation_ts>2009-09-08 20:41:00 -0400</creation_ts>
+          <short_desc>Program crashes</short_desc>
+          <delta_ts>2009-09-08 20:57:39 -0400</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>MyProduct</product>
+          <component>AComponent</component>
+          <version>1.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          
+          <priority>P1</priority>
+          <bug_severity>critical</bug_severity>
+          <target_milestone>M1</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">david.mccormack@projzilla.com</reporter>
+          <assigned_to name="Donald E. Knuth">Donald.Knuth@projzilla.com</assigned_to>
+          
+          <estimated_time>24.00</estimated_time>
+          <remaining_time>24.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+
+      
+          <token>1252459611-d2c4294f33746fd13e10cd054abfd7d4</token>
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">david.mccormack@projzilla.com</who>
+            <bug_when>2009-09-08 20:41:01 -0400</bug_when>
+            <thetext>When the program runs, it crashes.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>5</bug_id>
+          
+          <creation_ts>2009-09-08 20:47:00 -0400</creation_ts>
+          <short_desc>missing libxyz</short_desc>
+          <delta_ts>2009-09-08 21:01:19 -0400</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>MyProduct</product>
+          <component>BComponent</component>
+          <version>1.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>Mac OS</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>M1</target_milestone>
+          
+          <blocked>2</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">david.mccormack@projzilla.com</reporter>
+          <assigned_to name="Fred Brooks">Fred.Brooks@projzilla.com</assigned_to>
+          
+          <estimated_time>12.00</estimated_time>
+          <remaining_time>12.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+
+      
+          <token>1252459611-b1770b97332ae9367943b13c0dd3450c</token>
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">david.mccormack@projzilla.com</who>
+            <bug_when>2009-09-08 20:47:55 -0400</bug_when>
+            <thetext>Program is missing reference to libxyz.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>2</bug_id>
+          
+          <creation_ts>2009-09-08 20:43:00 -0400</creation_ts>
+          <short_desc>MacOS Boot up takes a while</short_desc>
+          <delta_ts>2009-09-08 20:59:05 -0400</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>MyProduct</product>
+          <component>BComponent</component>
+          <version>1.0.1</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>Mac OS</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          
+          <priority>P3</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>M1</target_milestone>
+          <dependson>4</dependson>
+    
+    <dependson>5</dependson>
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">david.mccormack@projzilla.com</reporter>
+          <assigned_to name="Fred Brooks">Fred.Brooks@projzilla.com</assigned_to>
+          
+          <estimated_time>99.00</estimated_time>
+          <remaining_time>99.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+
+      
+          <token>1252459611-887719ee7f2ec78a29c23124367a3f04</token>
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">david.mccormack@projzilla.com</who>
+            <bug_when>2009-09-08 20:43:30 -0400</bug_when>
+            <thetext>When booting, MacOS boot up takes a while.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>4</bug_id>
+          
+          <creation_ts>2009-09-08 20:45:00 -0400</creation_ts>
+          <short_desc>Missing file in install directory delays boot</short_desc>
+          <delta_ts>2009-09-08 21:01:25 -0400</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>MyProduct</product>
+          <component>BComponent</component>
+          <version>1.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          
+          <priority>P3</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>M1</target_milestone>
+          
+          <blocked>2</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">david.mccormack@projzilla.com</reporter>
+          <assigned_to name="Fred Brooks">Fred.Brooks@projzilla.com</assigned_to>
+          
+          <estimated_time>4.00</estimated_time>
+          <remaining_time>4.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+
+      
+          <token>1252459612-14e32b380d66f93c92b04439332d8938</token>
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">david.mccormack@projzilla.com</who>
+            <bug_when>2009-09-08 20:45:59 -0400</bug_when>
+            <thetext>Missing file in install directory delays boot</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>3</bug_id>
+          
+          <creation_ts>2009-09-08 20:44:00 -0400</creation_ts>
+          <short_desc>Missing period in dialog.</short_desc>
+          <delta_ts>2009-09-08 20:59:21 -0400</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>MyProduct</product>
+          <component>BComponent</component>
+          <version>1.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          
+          <priority>P5</priority>
+          <bug_severity>trivial</bug_severity>
+          <target_milestone>M1</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">david.mccormack@projzilla.com</reporter>
+          <assigned_to name="Fred Brooks">Fred.Brooks@projzilla.com</assigned_to>
+          
+          <estimated_time>2.00</estimated_time>
+          <remaining_time>2.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+
+      
+          <token>1252459612-d35c82420a2f95cdb70179d71f92f49a</token>
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">david.mccormack@projzilla.com</who>
+            <bug_when>2009-09-08 20:44:04 -0400</bug_when>
+            <thetext>There is a missing period at the end of a dialog.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+
+</bugzilla>

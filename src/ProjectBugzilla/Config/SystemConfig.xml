@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<!DOCTYPE config>
+<config>
+  <pair>
+    <key>DataMapperFile</key>
+    <value>Config\DataMapping.xml</value>
+  </pair>
+  <pair>
+    <key>LicenseFile</key>
+    <value>Config\license.xml</value>
+  </pair>
+  <pair>
+    <key>UpdateURL</key>
+  <value>http://www.projzilla.com/projzilla.version.xml</value>
+  </pair>
+  <pair>
+    <key>DefaultBugDuration</key>
+    <value>4</value>
+  </pair>
+</config>

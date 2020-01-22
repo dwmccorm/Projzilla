@@ -1,0 +1,3707 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE bugzilla SYSTEM "http://bugzilla.axentra.com/bugzilla.dtd">
+<bugzilla version="3.2" urlbase="http://bugzilla.axentra.com/" maintainer="david.mccormack@axentra.com" exporter="David.McCormack@axentra.com">
+
+    <bug>
+          <bug_id>14901</bug_id>
+          
+          <creation_ts>2009-08-06 10:36</creation_ts>
+          <short_desc>Change "Your home Server name" and "subdomain" to make it more users friendly</short_desc>
+          <delta_ts>2009-08-07 15:50:38</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Central Server and Communication</product>
+          <component>General</component>
+          <version>OR-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P4</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="David Perry">davidp@axentra.com</assigned_to>
+          
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>Central Server and Communication [hipspaces.com]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:36:18</bug_when>
+            <thetext>On the login in www.mystora.com, it has an entry: "Your home server name", please change it to "Stora Name:".
+
+Also, When a user enters in incorrect login info they are show the following pop-up
+message.
+
+"No match for that username on that sub domain. Please verify your username and
+try again".
+
+Technically this is correct, but with our target audience being users that are
+not that NAS savvy, it might be a good idea to change the verbiage of this
+message to something user can understand more easily.
+
+Please change it to: "No match for that username on that Stora box. Please verify your username and
+try again".</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David Perry">davidp@axentra.com</who>
+            <bug_when>2009-08-06 10:41:42</bug_when>
+            <thetext>Normally, wording changes on the portal pages should be assigned to Sylvain Lambert.  Since the "Your home server name" is so small, I can do it, but only if you have the translations for it in the other five languages for me.
+
+The text in the javascript popup comes from the homebase-service backend.  Changing that to a per-branding message (since I doubt we want Stora to be mentioned if someone fumbles a HomeLaCie login) will not be trivial.
+
+Perhaps I closed bug 10420 prematurely (if that word even applies to a bug that was open for nearly two years).  Addressing it would be a way to get nice per-branding messages for failed signins.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-07 14:31:18</bug_when>
+            <thetext>Using translations from the admin area, I've changed the 'Your home server name' to 'Stora name'
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=32736
+The exception is French. SylvainF mentions 'Nom Stora' is not meaningful
+Changes are live</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-07 15:50:38</bug_when>
+            <thetext>Mobile changes: http://newrome.axentra.com/viewvc?view=rev&amp;revision=32747
+Also live</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14945</bug_id>
+          
+          <creation_ts>2009-08-11 13:33</creation_ts>
+          <short_desc>Make shares just for TIme Machine and Vista Backup</short_desc>
+          <delta_ts>2009-08-15 18:28:39</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>Samba</component>
+          <version>OR-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          <blocked>14946</blocked>
+    
+    <blocked>14971</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Mitch O'Brien">Mitch.OBrien@axentra.com</assigned_to>
+          <cc>Sylvain.Fetiveau@axentra.com</cc>
+    
+    <cc>yannickg@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>15.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-11 13:33:04</bug_when>
+            <thetext>We need to make shares which are just for the Time machine and vista backup.  These should have a "$" in the name, see Yannick for an explanation of why.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-11 16:33:24</bug_when>
+            <thetext>Want me to do that if I have time?
+Do we need a different one for Time Machine and Vista Backup?
+Do we need to localize its/their name(s)?
+Where should it point? to MyBackup or to a new folder in the user's home dir?
+etc.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-13 15:12:59</bug_when>
+              <work_time>5.0</work_time>
+            <thetext>final-setup (trunk and netgear): create ComputersBackup Unix and samba accounts if not already there
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33029
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33030
+
+oe-initscripts: create /home/0backups in ensure_home if it does not exist and the ComputersBackup Unix user exists
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33031
+
+oe-templates (trunk and netgear): added ComputersBackup$ share to smb.conf.template
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33032
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33033</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-14 01:02:47</bug_when>
+            <thetext>Now that smbpasswd is not empty on fresh distributions, the reset to defaults script should treat it differently.
+Here's the change for that:
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33039</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 11:01:01</bug_when>
+              <work_time>3.0</work_time>
+            <thetext>Added set/get ComputersBackupParams, setComputersBackupPassword to system proxy:
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33066</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 13:09:42</bug_when>
+              <work_time>1.0</work_time>
+            <thetext>oe-netinfo: enabled/disable ComputersBackup$ share based on configdb in write-from-templates:
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33068</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 13:57:28</bug_when>
+              <work_time>1.0</work_time>
+            <thetext>final-setup (trunk and netgear): set a temporary password for ComputersBackup Unix user and lock it (will be used by AppleTalk):
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33069
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33070</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 14:43:40</bug_when>
+              <work_time>1.0</work_time>
+            <thetext>system proxy: lock/unlock ComputersBackup Unix acccount when we disable/enable
+ComputersBackup feature, change Unix passwd when we change the samba password
+(for AppleTalk):
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33072</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 14:48:51</bug_when>
+              <work_time>2.0</work_time>
+            <thetext>In case I don't have time to do it, we need the following new Web services (accessible to admin users only):
+- get status (enabled or not)
+- set status (enabled or not)
+- set password
+- wipe content (no system proxy call for now)
+
+System Proxy calls to use:
+
+The first 2 are similar to the winnet ones:
+
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;getComputersBackupParams&lt;/operation_name&gt;
+&lt;/proxy_request&gt;
+
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;setComputersBackupParams&lt;/operation_name&gt;
+&lt;parameter parameter_name="enabled"&gt;1&lt;/parameter&gt;
+&lt;/proxy_request&gt;
+
+The 3rd one is similar to changepassword, but without username:
+
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;setComputersBackupPassword&lt;/operation_name&gt;
+&lt;parameter parameter_name="password"&gt;axentra1&lt;/parameter&gt;
+&lt;/proxy_request&gt;</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 14:57:46</bug_when>
+            <thetext>For the Web services, I'm thinking of:
+
+Get status:
+GET /api/2.0/rest/computersbackup/status
+Response: 200 / &lt;computersbackup enabled="true|false" /&gt;
+
+Set status:
+PUT &lt;computersbackup enabled="true|false" /&gt;
+to /api/2.0/rest/computersbackup/status
+Response: 200 / &lt;computersbackup enabled="true|false" /&gt;
+
+Set password:
+PUT &lt;computersbackup password="mypassword" /&gt;
+to /api/2.0/rest/computersbackup/password
+Response: 200 / &lt;computersbackup /&gt; ???
+
+Wipe backups:
+DELETE on /api/2.0/rest/computersbackup/storage
+Response: 204 / (empty)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 16:52:20</bug_when>
+              <work_time>2.0</work_time>
+            <thetext>Bug 14945: added skeleton of computersbackup service, added support for servicesComputersBackup in flash config
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33077
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33078
+
+I hope it's not too buggy. Mitch will fill the blanks.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-15 18:28:39</bug_when>
+            <thetext>Mitch, please make this your highest priority.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>12647</bug_id>
+          
+          <creation_ts>2008-09-24 15:36</creation_ts>
+          <short_desc>Unable to delete desktop mirrors backup activity log</short_desc>
+          <delta_ts>2009-08-06 16:40:19</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>DesktopMirror</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Mostafa Hosseini">mostafah@axentra.com</assigned_to>
+          <cc>yannickg@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.10</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="QA Team">qa@axentra.com</qa_contact>
+          
+          
+          
+          <cf_traceability>SF1936</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2008-09-24 15:36:20</bug_when>
+            <thetext>Created an attachment (id=2770)
+No Delete
+
+I attempt to delete desktop mirrors backup activity log, and it does not allow me.
+
+0. "View Report"
+1. Right click and "Select All"
+2. Right click and "Delete"
+   The menu option seems to do nothing.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2008-10-01 10:02:32</bug_when>
+            <thetext>DesktopMirror will be rewritten from scratch. Reassigning to Yannick who's leading that effort.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2008-11-03 14:08:15</bug_when>
+            <thetext>Moving Desktop mirror issues to B5 because MySafe is B4.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-06 16:38:37</bug_when>
+            <thetext>*** Bug 14909 has been marked as a duplicate of this bug. ***</thetext>
+          </long_desc>
+      
+          <attachment isobsolete="0" ispatch="0" isprivate="0">
+            <attachid>2770</attachid>
+            <date>2008-09-24 15:36</date>
+            <desc>No Delete</desc>
+            <filename>NoDel.png</filename>
+            <type>image/png</type>
+            <size>23044</size>
+            <attacher>David.McCormack@axentra.com</attacher>        
+
+          </attachment>
+      
+
+    </bug>
+    <bug>
+          <bug_id>12650</bug_id>
+          
+          <creation_ts>2008-09-24 16:49</creation_ts>
+          <short_desc>HS 2.0/DesktopSync: Not responding while searching for HipServ</short_desc>
+          <delta_ts>2009-08-15 21:42:00</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>DesktopMirror</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Roby Brisson">roby.brisson@axentra.com</reporter>
+          <assigned_to name="Mostafa Hosseini">mostafah@axentra.com</assigned_to>
+          <cc>yannickg@axentra.com</cc>
+          <estimated_time>6.00</estimated_time>
+          <remaining_time>6.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="QA Team">qa@axentra.com</qa_contact>
+          
+          
+          
+          
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Roby Brisson">roby.brisson@axentra.com</who>
+            <bug_when>2008-09-24 16:49:07</bug_when>
+            <thetext>Created an attachment (id=2773)
+desktop sync not responding
+
+OS: Vista
+Version: 2.0.0.0
+
+I added a folder to be backed up and clicked sync.
+While it was searching for the HipServ (which it could not find because I was not on the same network as the HipServ) I got the not responding window.  It did come back, but I think we would want to avoid that somehow...</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2008-10-01 10:02:26</bug_when>
+            <thetext>DesktopMirror will be rewritten from scratch. Reassigning to Yannick who's leading that effort.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2008-10-16 15:15:59</bug_when>
+            <thetext>Does this happen on every backup?
+
+If it happens everytime, we will fix it in "Motorola Phase 1", if it only happens some of the time, we will re-examine.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Roby Brisson">roby.brisson@axentra.com</who>
+            <bug_when>2008-11-11 10:42:49</bug_when>
+            <thetext>I seem to be able to cause it all the time.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-15 21:42:00</bug_when>
+            <thetext>The freeze happens when DM tries to connect to the domain which is likely behind a firewall.
+The connection is synchronous and freezes the UI.
+I've made it so that the option can be turned on and off in case we want a user to be able to connect to remote but the default behaviour is to just mention that the CPE was not found and to stop the backup.
+Netgear branch:
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33119</thetext>
+          </long_desc>
+      
+          <attachment isobsolete="0" ispatch="0" isprivate="0">
+            <attachid>2773</attachid>
+            <date>2008-09-24 16:49</date>
+            <desc>desktop sync not responding</desc>
+            <filename>desktop sync not responding.jpg</filename>
+            <type>image/jpeg</type>
+            <size>61027</size>
+            <attacher>roby.brisson@axentra.com</attacher>        
+
+          </attachment>
+      
+
+    </bug>
+    <bug>
+          <bug_id>14414</bug_id>
+          
+          <creation_ts>2009-06-28 21:59</creation_ts>
+          <short_desc>DesktopMirror should inform user appropriately if storage not available for backup</short_desc>
+          <delta_ts>2009-08-11 12:30:02</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>DesktopMirror</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Task</keywords>
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          <dependson>14413</dependson>
+          <blocked>14277</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Mostafa Hosseini">mostafah@axentra.com</reporter>
+          <assigned_to name="Mostafa Hosseini">mostafah@axentra.com</assigned_to>
+          <cc>yannickg@axentra.com</cc>
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-06-28 21:59:09</bug_when>
+            <thetext>Bug 14413 will take care of returning an error code that will indicate /home not being mounted or in other words, storage not being available.
+DesktopMirror should inform the user with an appropriate message when receiving this error code.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14524</bug_id>
+          
+          <creation_ts>2009-07-08 15:42</creation_ts>
+          <short_desc>QA: Using a HDD which has previous HipServ RAID partition in a unit which configured in different languages will cause problems</short_desc>
+          <delta_ts>2009-08-11 12:32:57</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>OS</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P4</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          <dependson>14563</dependson>
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Barry Long">Barry.Long@axentra.com</reporter>
+          <assigned_to name="Mostafa Hosseini">mostafah@axentra.com</assigned_to>
+          
+          <estimated_time>16.00</estimated_time>
+          <remaining_time>16.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <flag name="Doc::ReleaseNote" id="425" status="+" setter="David.McCormack@axentra.com"/>
+          <long_desc isprivate="0">
+            <who name="Barry Long">Barry.Long@axentra.com</who>
+            <bug_when>2009-07-08 15:42:48</bug_when>
+            <thetext>Environment:
+
+Netgear RC1 build 20090708
+
+Methods:
+
+1.Kept a HDD which has previous RAID data/partition on it in English, i.e. has FamilyLibrary, MyLibrary, MyComputer
+2. Prepare a newly flashed Netgear build 20090708 in Spanish
+3. Made the unit diskless (do not install any HDD), run setup in Spanish
+4.Visit the unit from a browser, make sure only preference is available and it tells the user to configure the HDD
+5.Hot plug in the HDD in Step 1
+6.Restart the unit (I should use the restart function in Preference but since it has a bug and not working at the moment, I manually shutdown –r now)
+7.After the unit reboots, log in and check Media Library.
+8.The “Family Library” is missing, “My Library” shows “loading....”, “MyComputers” looks fine
+9.Check /home/admin, found “Family Library” is there but under 0common, there are folders both in English and Spanish and for some folders, there are question marks in the name, like “M??sicaFamiliar”</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14563</bug_id>
+          
+          <creation_ts>2009-07-10 09:35</creation_ts>
+          <short_desc>When a drive from a previous install is used on a new install, /home/user permissions could be wrong</short_desc>
+          <delta_ts>2009-08-11 12:33:27</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>Admin backend</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P4</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          <blocked>14524</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Mostafa Hosseini">mostafah@axentra.com</reporter>
+          <assigned_to name="Mostafa Hosseini">mostafah@axentra.com</assigned_to>
+          
+          <estimated_time>6.00</estimated_time>
+          <remaining_time>6.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-07-10 09:35:18</bug_when>
+            <thetext>If a drive from a previous install has user home directories and this drive is used on a fresh new install, it will be automatically mounted. When new users are created though with usernames similar to the one on the drive, there's a chance the UIDs won't match (since they might not be created in the same order). This will cause permission problems.
+One solution is to reset ownership on the /home/&lt;new user&gt; folder after creating the new user.
+Another idea is to keep two matching signatures, one on the system partition and the other on the /home partition. When there's a mismatch there will be UI to ask the admin what they want to do. An option is to move all existing /home/&lt;username&gt; folders to FamilyLibrary/olddrive or something.
+Please add ideas.
+
+This is somehow related to bug 14524 so I'm adding a connection</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-07-10 09:42:30</bug_when>
+            <thetext>Another approach (or possibly in conjunction with the signature approach) might be to write a generic "sanity" script (run @ bootup) that would check (and repair as appropriate) that:
+- all files have correct permissions and ownership 
+- all UIDs used in /home have a matching entry in /etc/passwd (if missing, move to /home/oldrive or /home/orpan ?)
+- samba user conf matches /etc/passwd
+- other?</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14682</bug_id>
+          
+          <creation_ts>2009-07-21 13:25</creation_ts>
+          <short_desc>Netgear 2.0/Factory Reset: Factory reset and re-intall, still have some italian folders</short_desc>
+          <delta_ts>2009-08-11 12:33:53</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>OS</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P4</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Roby Brisson">roby.brisson@axentra.com</reporter>
+          <assigned_to name="Mostafa Hosseini">mostafah@axentra.com</assigned_to>
+          
+          <estimated_time>12.00</estimated_time>
+          <remaining_time>12.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Roby Brisson">roby.brisson@axentra.com</who>
+            <bug_when>2009-07-21 13:25:06</bug_when>
+            <thetext>build: 2.0.0.42
+
+Steps:
+
+1. installed netgear in italian
+2. fixed raman's serial wires
+3. reset netgear
+4. re-installed in english.
+
+Now I have a mix of english and italian and "mylibrary" won't load in media library:
+
+-bash-3.2# ls
+ArchivioFamiglia  FamilyLibrary  MioArchivio  MyComputers
+-bash-3.2# pwd
+/home/admin</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14953</bug_id>
+          
+          <creation_ts>2009-08-12 11:07</creation_ts>
+          <short_desc>Mouseover in Backup and ML for Netgear skin isn't working</short_desc>
+          <delta_ts>2009-08-13 09:22:39</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>General</component>
+          <version>OR-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Richard Dault">richard.dault@axentra.com</reporter>
+          <assigned_to name="Philip Baker">philip.baker@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>2.00</remaining_time>
+          <actual_time>2.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-12 11:07:23</bug_when>
+            <thetext>When we mouse over the list view in backup and ML, the background should change colours for the entire row and when the mouse is over any column.
+
+Right now, both modules behave incorrectly and differently.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Luc Gregoire">lucg@axentra.com</who>
+            <bug_when>2009-08-13 09:22:39</bug_when>
+              <work_time>2.0</work_time>
+            <thetext>Some improvements were made in MediaLibrary and Backup modules but the Backup module still needs some work with the rollover highlights.
+
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=32995</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>13759</bug_id>
+          
+          <creation_ts>2009-03-11 09:12</creation_ts>
+          <short_desc>System proxy support for USB</short_desc>
+          <delta_ts>2009-08-13 10:26:08</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>Admin backend</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          <keywords>Task</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Orange 2.0 GM</target_milestone>
+          <dependson>13910</dependson>
+          <blocked>13760</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</reporter>
+          <assigned_to name="Philippe Tanguay">philippe.tanguay@axentra.com</assigned_to>
+          
+          <estimated_time>24.00</estimated_time>
+          <remaining_time>24.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="QA Team">qa@axentra.com</qa_contact>
+          
+          <cf_target_distribution>LaCie 2.0 GM, Netgear 1.1 Up</cf_target_distribution>
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-03-11 09:12:33</bug_when>
+            <thetext>We need the system proxy to support the USB calls what were available in 1.6 in the admin interface. I assume they are: mount, unmount and format.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-07-08 19:32:49</bug_when>
+            <thetext>This is a likely candidate to be pushed out.
+
+Please confirm with DaveM prior to working on it.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-12 15:07:30</bug_when>
+            <thetext>Step 1 of the mysafe/format work for USB: added a getstatus command to the proxy
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=32955
+
+Elements are mostly self-explanatory, except for location:
+if location is 3, for ie, the device is physical port 3
+if location is 3.2, the device is in port 2 of a hub, which is on physical port 3.
+
+If mountpoint is empty, we should offer a format button in the ui
+If mountpoint is not empty, we should offer an eject button in the ui
+(eject and format proxy commands are still in development)
+
+Query:
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;usb&lt;/command_name&gt;
+&lt;operation_name&gt;getstatus&lt;/operation_name&gt;
+&lt;/proxy_request&gt;
+
+Response:
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_return&gt;
+&lt;command_name&gt;usb&lt;/command_name&gt;
+&lt;operation_name&gt;getstatus&lt;/operation_name&gt;
+&lt;proxy_reply return_code="SUCCESS"&gt;Operation successful&lt;/proxy_reply&gt;
+&lt;return_value&gt;
+&lt;usb_devices&gt;
+&lt;usb_device&gt;
+&lt;device&gt;sdc&lt;/device&gt;
+&lt;vendor&gt;FlyDrive&lt;/vendor&gt;
+&lt;mountpoint/&gt;
+&lt;isMySafe&gt;false&lt;/isMySafe&gt;
+&lt;location&gt;3&lt;/location&gt;
+&lt;capacity&gt;1015&lt;/capacity&gt;
+&lt;/usb_device&gt;
+&lt;usb_device&gt;
+&lt;device&gt;sdb&lt;/device&gt;
+&lt;vendor&gt;Unknown&lt;/vendor&gt;
+&lt;mountpoint&gt;/home/0common/usb2&lt;/mountpoint&gt;
+&lt;isMySafe&gt;false&lt;/isMySafe&gt;
+&lt;location&gt;2.1&lt;/location&gt;
+&lt;capacity&gt;4006&lt;/capacity&gt;
+&lt;/usb_device&gt;
+&lt;usb_device&gt;
+&lt;device&gt;sdd&lt;/device&gt;
+&lt;vendor&gt;Generic&lt;/vendor&gt;
+&lt;mountpoint&gt;/home/0common/usb3&lt;/mountpoint&gt;
+&lt;isMySafe&gt;false&lt;/isMySafe&gt;
+&lt;location&gt;2.4&lt;/location&gt;
+&lt;capacity&gt;1049&lt;/capacity&gt;
+&lt;/usb_device&gt;
+&lt;/usb_devices&gt;
+&lt;/return_value&gt;
+&lt;/proxy_return&gt;</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-13 10:26:08</bug_when>
+            <thetext>- tweaked regexp for location. Handle multi-part keys for mountpoints
+- added eject px command and usbremoveall to support eject, removed
+  lazy unmount option to properly handle a busy key eject
+
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=32998
+
+Query:
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;usb&lt;/command_name&gt;
+&lt;operation_name&gt;eject&lt;/operation_name&gt;
+&lt;parameter parameter_name="disk"&gt;sdb&lt;/parameter&gt;
+&lt;/proxy_request&gt;
+
+Response:
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_return&gt;
+&lt;command_name&gt;usb&lt;/command_name&gt;
+&lt;operation_name&gt;eject&lt;/operation_name&gt;
+&lt;proxy_reply return_code="SUCCESS" description="Operation successful" /&gt;
+&lt;/proxy_return&gt;</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>13761</bug_id>
+          
+          <creation_ts>2009-03-11 09:37</creation_ts>
+          <short_desc>USB UI Support</short_desc>
+          <delta_ts>2009-08-05 08:28:41</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>MySafe</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Task</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Orange 2.0 GM</target_milestone>
+          <dependson>13760</dependson>
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</reporter>
+          <assigned_to name="Philippe Tanguay">philippe.tanguay@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="QA Team">qa@axentra.com</qa_contact>
+          
+          <cf_target_distribution>LaCie 2.0 GM, Netgear 1.1 Up</cf_target_distribution>
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-03-11 09:37:53</bug_when>
+            <thetext>Use the USB WS (bug 13760) to enable mount/unmount/format. No idea where that would appear in the UI.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-07-08 19:34:14</bug_when>
+            <thetext>This is a high runner candidate to be pushed out.
+
+Please confirm with DaveM prior to working on this.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>13910</bug_id>
+          
+          <creation_ts>2009-04-08 15:21</creation_ts>
+          <short_desc>Provide mechanism to detect/mount USB storage for MySafe</short_desc>
+          <delta_ts>2009-07-23 16:24:22</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>USB Storage</component>
+          <version>OR-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Task</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Orange 2.0 GM</target_milestone>
+          
+          <blocked>13759</blocked>
+    
+    <blocked>14120</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Yannick Guay">yannickg@axentra.com</reporter>
+          <assigned_to name="Philippe Tanguay">philippe.tanguay@axentra.com</assigned_to>
+          
+          <estimated_time>24.00</estimated_time>
+          <remaining_time>24.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          <cf_target_distribution>LaCie 2.0 GM, Netgear 1.1 Up</cf_target_distribution>
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-04-08 15:21:49</bug_when>
+            <thetext>In 2.0 we're replicating similar behavior found in 1.x where whenever an USB storage gets attached to the HipServ is it detected, mounted and we get notified.
+
+As such, we have ported the 1.x php code to C which means I'm expecting the following conditions to be met:
+1-/mnt/usb exists and is a directory
+2-/var/lib/hotplug-usb-storage/active exist and is a regular file
+
+if those 2 conditions are met then we assume there is a USB attached to the HipServ</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-05-22 09:43:00</bug_when>
+            <thetext>this (Comment #4 From bug #14120) applies to this bug too:
+
+Recap on discussion that Mostafa, Sylvain, Philip and I had about tagging
+volume for mysafe:
+1-A drive has to be signed in order to be mounted and used for backup
+2-The backupagent is not aware of the details of the signature, all it knows is
+where is the mount point
+3-The automount feature will check the signature and mount the drive only if it
+finds the signature
+3-Should a drive with no signature be attached, it will be possible to create a
+signature on it by going in the admin section
+4-If another drive had a signature before the user will be prompted to replace
+its drive, the previous signature will be deleted and that old drive will not
+be recognized anymore.
+5-When "drive not present" error is reported the backend should check whether a
+signature already existed and report the user accordingly, the 2 possible
+messages will be:
+   -"a drive has not be signed for mysafe, you could sign it by going to admin
+section..."
+   -"this drive could not be used for mysafe unless it is signed, you could do
+so by going to the admin section..."</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-05-23 21:03:31</bug_when>
+            <thetext>If this is not done, what would the user experience be?</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-05-25 09:21:30</bug_when>
+            <thetext>(In reply to comment #2)
+&gt; If this is not done, what would the user experience be?
+
+has to be done, this component mounts the USB volume, without it no backup possible.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-06-12 15:31:36</bug_when>
+            <thetext>Be careful with the device names, avoid to mix eSATA used for the RAID array and the USB devices used for backup.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-07-08 19:36:23</bug_when>
+            <thetext>This is a high runner candidate to be pushed out.
+
+Please confirm with DaveM prior to working on this.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14800</bug_id>
+          
+          <creation_ts>2009-07-30 09:30</creation_ts>
+          <short_desc>afp/netatalk does not work with the FamilyLibrary symlink</short_desc>
+          <delta_ts>2009-08-11 12:43:18</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>General</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P4</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Philippe Tanguay">philippe.tanguay@axentra.com</reporter>
+          <assigned_to name="Philippe Tanguay">philippe.tanguay@axentra.com</assigned_to>
+          <cc>David.McCormack@axentra.com</cc>
+    
+    <cc>davidp@axentra.com</cc>
+          <estimated_time>16.00</estimated_time>
+          <remaining_time>16.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1932</cf_traceability>
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-07-30 09:30:12</bug_when>
+            <thetext>The netatalk implementation of afp does not deal well with symbolic links, which is how we give users access to /home/0common as ~/FamilyLibrary.
+
+From the netatalk dox:
+"Don't use unix symlinks. Just don't. With a symlink a file/directory "exists" twice, something AFP doesn't allow. There's currently no way this can be resolved, as we either end up with two file/dirs having the same id, or a file having two parents. If you still insist on using them, be aware you're heavily violating the specs. You have been warned..."
+
+There is a bug open w/ the netatalk dev on this issue:  http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=525216
+
+With DavidP's help, we have identified 2 workarounds:
+
+- create a symlink with the same name (ls -s /home/0common /home/admin/0common).  This is supported by the netatalk implementation (although as stated in the dox, discouraged.) This solution works, although shows an ugly directory name to the users, via all protocols (ftp, smb, our ui, etc...).
+
+- instead of using a symlink,  do a mount of /home/0common in each user's directory. eh:   mount --rbind /home/0common /home/admin/FamilyLibrary.  This solution is transparent to the user, however we would have to modify our user creation/deletion process to manage this mount in /etc/fstab.  It would also require (significant?) testing for all protocols, including the flash UI.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-07-30 09:35:06</bug_when>
+            <thetext>Webdav also doesn't allow symlinks but we hacked it specifically and made an exception for /home/0common. It has worked without a problem. Just an observation</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David Perry">davidp@axentra.com</who>
+            <bug_when>2009-07-30 11:25:12</bug_when>
+            <thetext>(In reply to comment #1)
+&gt; Webdav also doesn't allow symlinks but we hacked it specifically and made an
+&gt; exception for /home/0common. It has worked without a problem. Just an
+&gt; observation
+
+For whatever it's worth, if we use the rbind solution, I think that would mean we wouldn't need to hack webdav anymore, either.  (This would need to be tested, of course.)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-06 09:21:25</bug_when>
+            <thetext>*** Bug 14877 has been marked as a duplicate of this bug. ***</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-10 13:21:07</bug_when>
+            <thetext>The rbind approach is definitely the best, most robust way to go.  However, it will require a good deal of testing to make sure it does not break any of the access methods (flash client ui, ftp, aftp, smb, others(?) )</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-11 12:43:18</bug_when>
+            <thetext>Our assumption across the OS is that FamilyLibrary is a symlink inside the user's home folder. I'm pretty sure we will encounter many problems if we change that.
+Let's hold off on considering this change for now. I'd like to take a look at the internals of atalk first and then we'll discuss.
+Re-adjusting estimate</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14906</bug_id>
+          
+          <creation_ts>2009-08-06 11:43</creation_ts>
+          <short_desc>Problem with data integrity test Winthrax and Stora</short_desc>
+          <delta_ts>2009-08-11 12:45:37</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>OS</component>
+          <version>OR-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>HSDE</keywords>
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Mostafa Hosseini">mostafah@axentra.com</reporter>
+          <assigned_to name="Philippe Tanguay">philippe.tanguay@axentra.com</assigned_to>
+          <cc>Mitch.OBrien@axentra.com</cc>
+          <estimated_time>48.00</estimated_time>
+          <remaining_time>28.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1914</cf_traceability>
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-06 11:43:14</bug_when>
+            <thetext>We have one of our Stora systems running data integrity tests 24/7. One of the
+test we ran was Winthrax to the Stora.
+
+We have two clients running Winthrax against one Stora. Each session has
+about 8 threads each. Over the weekend we ran the test and we noticed that
+the Winthrax complained about not having a connection anymore. We thought that
+the Stora might have had a problem because it's IP was renewed. We started the
+test again and after about 28 hours the same errors started showing up.
+
+Now that we have SSH access to the Stora we are able to get some info from
+/var/log/dmesg.
+
+
+XFS internal error XFS_WANT_CORRUPTED_GOTO at line 1563 of file
+fs/xfs/xfs_alloc.c. Caller 0xbf00c6a4
+[&lt;c00fc270&gt;] (dump_stack+0x0/0x14) from [&lt;bf035800&gt;] (xfs_error_report+0x54/0x64
+[xfs])
+[&lt;bf0357ac&gt;] (xfs_error_report+0x0/0x64 [xfs]) from [&lt;bf00bedc&gt;]
+(xfs_free_ag_extent+0x59c/0x7fc [xfs])
+[&lt;bf00b940&gt;] (xfs_free_ag_extent+0x0/0x7fc [xfs]) from [&lt;bf00c6a4&gt;]
+(xfs_free_extent+0xac/0xc8 [xfs])
+[&lt;bf00c5f8&gt;] (xfs_free_extent+0x0/0xc8 [xfs]) from [&lt;bf017af8&gt;]
+(xfs_bmap_finish+0xfc/0x1a0 [xfs])
+r8:c102bd34 r7:c1e080b8 r6:00000000 r5:000357b8 r4:c60fd358
+[&lt;bf0179fc&gt;] (xfs_bmap_finish+0x0/0x1a0 [xfs]) from [&lt;bf03f100&gt;]
+(xfs_itruncate_finish+0x1e4/0x338 [xfs])
+[&lt;bf03ef1c&gt;] (xfs_itruncate_finish+0x0/0x338 [xfs]) from [&lt;bf05b2b4&gt;]
+(xfs_setattr+0x8a4/0xdd8 [xfs])
+[&lt;bf05aa10&gt;] (xfs_setattr+0x0/0xdd8 [xfs]) from [&lt;bf067780&gt;]
+(xfs_vn_setattr+0x164/0x184 [xfs])
+[&lt;bf06761c&gt;] (xfs_vn_setattr+0x0/0x184 [xfs]) from [&lt;c019a7a0&gt;]
+(notify_change+0x124/0x244)
+r7:c2e53458 r6:00002068 r5:c60aa738 r4:c102bf00
+[&lt;c019a67c&gt;] (notify_change+0x0/0x244) from [&lt;c0184c34&gt;] (do_truncate+0x74/0x90)
+[&lt;c0184bc0&gt;] (do_truncate+0x0/0x90) from [&lt;c0184da0&gt;] (do_sys_ftruncate+0x150/0x174)
+r6:00000000 r5:00000000 r4:00000000
+[&lt;c0184c50&gt;] (do_sys_ftruncate+0x0/0x174) from [&lt;c0184de0&gt;]
+(sys_ftruncate64+0x1c/0x24)
+[&lt;c0184dc4&gt;] (sys_ftruncate64+0x0/0x24) from [&lt;c0029b20&gt;]
+(ret_fast_syscall+0x0/0x2c)
+xfs_force_shutdown(md0,0x8) called from line 4258 of file fs/xfs/xfs_bmap.c.
+Return address = 0xbf06ae0c
+Filesystem "md0": Corruption of in-memory data detected. Shutting down
+filesystem: md0
+Please umount the filesystem, and rectify the problem(s)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-06 11:43:31</bug_when>
+            <thetext>Comment from Phil:
+
+I’m just getting up to speed on XFS, but one thing that immediately jumped out at me is that the xfsprogs package we are using (2.8.11-3.fc6) is absolutely *ancient*.  Looking at the changelog, it’s last entry is from Sept 2006.  On newrome we have an el5 srpm (2.9.4-4) with a last entry of October 2007.  Latest stable on the web is 3.0.1.  Looking at its changelog, there have been several fixes to mkfs.xfs,  as well as one fix specifically for ARM.  However, none of the fixes point specifically at the problem reported by Netgear.
+
+As a reference, the kernel we are using on NG is 2.6.22.18, which was released in Feb 2008.  If we were to use an xfsprogs release from a similar vintage, it would put us at xfsprogs-2.9.6.
+
+Once we know what size drive NG was using (googlin’ around, this seems to be a critical differentiator when dealing with XFS corruption), I will try to reproduce the problem.  If/when that is accomplished, I will upgrade xfsprogs and see if the problem remains.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-06 11:44:16</bug_when>
+            <thetext>Winthrax settings
+
+
+Options:
+
+File Flags &gt; Write Through
+Line Size &gt; 64
+
+
+Drives
+
+C = Local drive
+Z = Network drive
+
+C &gt; Z
+Z &gt; C
+C &gt; Z
+Z &gt; C
+C &gt; Z
+Z &gt; C
+C &gt; Z
+Z &gt; C</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-06 11:45:08</bug_when>
+            <thetext>Comment from Phil:
+
+Update: Checking in on the system under test from remote,  I see it is still running along happily, disk usage increasing at 3.2Gb so far, no errors/exceptions/crashes in the logs.
+
+I suppose it could also be the rate at which the system gets hammered - I'm currently running both Winthrax and the CPE off a 10Mbps half-duplex hub... When I get in I will re-run the test at 1Gbs full-duplex (off a good quality switch if I can find one in the office) and see if that makes a difference.
+
+Was this problem reproduced on more than 1 system and/or occasion at their end ?</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-06 11:46:27</bug_when>
+            <thetext>(In reply to comment #3)
+&gt; Was this problem reproduced on more than 1 system and/or occasion at their end
+&gt; ?
+
+Twice but on the same unit. See comment #0 . Note that it's two clients against one stora</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-06 11:47:16</bug_when>
+            <thetext>Comment from Phil:
+
+Hmm...  the winthrax tool is reporting a whole whack of failed tests (28) and several thousand successes.  It is still working away, and there a no corruption errors on the CPE side...  Not sure what to make of it, since winthrax does not specify what the failures actually are.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-07 08:36:09</bug_when>
+            <thetext>Currently implementing an xfs_repair minion for boot time and on-demand.  Code is not committed yet (needs more testing), but here are the proxy commands:
+
+***** Running xfs_repair (only 1 can be run at a time, it will fail if one is already running)
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;runXFSRepair&lt;/operation_name&gt;
+&lt;parameter parameter_name="filesystem"&gt;/dev/md0&lt;/parameter&gt;
+&lt;/proxy_request&gt;
+
+Reply:
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_return&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;runXFSRepair&lt;/operation_name&gt;
+&lt;proxy_reply return_code="SUCCESS"&gt;Operation successful&lt;/proxy_reply&gt;
+&lt;return_value&gt;&lt;data name="status"&gt;Running&lt;/data&gt;&lt;/return_value&gt;&lt;/proxy_return&gt;
+
+***** Is an xfs_repair running ? (any status other than running means that runXFSRepair is available)
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;getXFSRepairStatus&lt;/operation_name&gt;
+&lt;/proxy_request&gt;
+
+Reply:
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_return&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;getXFSRepairStatus&lt;/operation_name&gt;
+&lt;proxy_reply return_code="SUCCESS"&gt;Operation successful&lt;/proxy_reply&gt;
+&lt;return_value&gt;&lt;data name="status"&gt;Running&lt;/data&gt;&lt;/return_value&gt;&lt;/proxy_return&gt;
+
+***** Get repair progress ?
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;getXFSRepairProgress&lt;/operation_name&gt;
+&lt;/proxy_request&gt;
+
+Reply:  (stdout represents percentage)
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_return&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;getXFSRepairProgress&lt;/operation_name&gt;
+&lt;proxy_reply return_code="SUCCESS"&gt;Operation successful&lt;/proxy_reply&gt;
+&lt;return_value&gt;&lt;data name="stdout"&gt;17&lt;/data&gt;&lt;/return_value&gt;&lt;/proxy_return&gt;
+
+***** Cancel repair minion 
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;cancelXFSRepair&lt;/operation_name&gt;
+&lt;/proxy_request&gt;
+
+Reply: (killing a minion puts in unknown status state)
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_return&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;cancelXFSRepair&lt;/operation_name&gt;
+&lt;proxy_reply return_code="SUCCESS"&gt;Operation successful&lt;/proxy_reply&gt;
+&lt;return_value&gt;&lt;data name="status"&gt;Unknown status&lt;/data&gt;&lt;/return_value&gt;&lt;/proxy_return&gt;
+
+I will also implement a proxy call to check to see if an xfs repair is needed.  Something like (subject to change!) :
+
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_request&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;isXFSRepairNeeded&lt;/operation_name&gt;
+&lt;/proxy_request&gt;
+
+Reply:
+n unknown status state)
+&lt;?xml version="1.0"?&gt;
+&lt;proxy_return&gt;
+&lt;command_name&gt;utility&lt;/command_name&gt;
+&lt;operation_name&gt;isXFSRepairNeeded&lt;/operation_name&gt;
+&lt;proxy_reply return_code="SUCCESS"&gt;Operation successful&lt;/proxy_reply&gt;
+&lt;return_value&gt;&lt;data name="status"&gt;true&lt;/data&gt;&lt;/return_value&gt;&lt;/proxy_return&gt;
+which will report true if:
+/home mounted == false, /dev/sda present == true, /dev/sda == SATA device
+otherwise it will return false.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mitch O'Brien">Mitch.OBrien@axentra.com</who>
+            <bug_when>2009-08-07 09:28:04</bug_when>
+            <thetext>@Mos/Phil/DaveM: How is this for a UI?  Okay?
+
+
+Notification:
+-------------
+
+Your Stora has detected that an installed disk needs to be repaired.  Do you want to attempt a repair now?   [Yes] [No]
+
+
+Preferences:
+------------
+
+Disk Repair
+
+The disk(s) in your Stora are running normally and do not need to be repaired.
+
+OR
+
+Your Stora has detected that an installed disk needs to be repaired.  Do you want to attempt a repair now?   [Yes] [No]
+
+OR
+
+A disk repair operation is now in progress. [Cancel]</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-07 10:48:05</bug_when>
+            <thetext>Information from another unit that failed after being pounded on by wintrax:
+
+ls -l /
+
+-rw-r--r--  1 root root     3 Nov  3  2008 fsckoptions
+?---------  ? ?    ?        ?            ? home
+drwxr-xr-x  8 root root 10200 Jul 29 20:53 lib
+drwxrwxr-x  3 root www    368 Jul 31 19:13 links
+drwxr-xr-x  2 root root   160 May 11 17:55 media
+drwxr-xr-x  3 root root   224 Jan  3  2001 mnt
+drwxr-xr-x  2 root root   160 May 11 17:55 opt
+dr-xr-xr-x 79 root root     0 Dec 31  1969 proc
+drwxr-x---  3 root root   504 Jul 31 19:13 root
+drwxr-xr-x  2 root root 10240 Jul 31 19:13 sbin
+drwxr-xr-x  2 root root   160 May 11 17:55 selinux
+drwxr-xr-x  2 root root   160 May 11 17:55 srv
+drwxr-xr-x 10 root root     0 Dec 31  1969 sys
+?---------  ? ?    ?        ?            ? tmp
+drwxr-xr-x 14 root root  1000 Jun 12 08:22 usr
+
+
+ls -l /home
+ls: /home: Input/output error
+
+dmesg:
+scsi 0:0:0:0: rejecting I/O to dead device
+Read-error on swap-device (9:0:1128)
+Read-error on swap-device (9:0:1136)
+Read-error on swap-device (9:0:1144)
+Read-error on swap-device (9:0:1152)
+scsi 0:0:0:0: rejecting I/O to dead device
+Read-error on swap-device (9:0:1096)
+
+Couldn't unmount /home so we rebooted and after a reboot /home was mounted without any errors.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-07 11:36:58</bug_when>
+            <thetext>An weird thing about Stora2 when it was in a bad state was that the drive was on /dev/sdb but we got:
+
+-bash-3.2# cat /proc/mdstat 
+Personalities : [linear] [raid0] [raid1] [raid6] [raid5] [raid4] 
+md0 : active raid1 sda1[0]
+      488281152 blocks [2/1] [U_]
+      
+
+pointing to sda</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-09 12:39:49</bug_when>
+            <thetext>Another unit called cberry-stora encountered the same problem.
+
+The symptoms were exactly like stora2 in which /dev/sda and /dev/sdb were moved to /dev/sdc and /dev/sdd but mdstat was still using /dev/sdb . Of course I/O to home was not possible.
+
+A reboot fixed the problem.
+Some info from dmesg after reboot:
+
+md: Autodetecting RAID arrays.
+md: autorun ...
+md: considering sdb1 ...
+md:  adding sdb1 ...
+md:  adding sda1 ...
+md: created md0
+md: bind&lt;sda1&gt;
+md: bind&lt;sdb1&gt;
+md: running: &lt;sdb1&gt;&lt;sda1&gt;
+md: kicking non-fresh sda1 from array!
+md: unbind&lt;sda1&gt;
+md: export_rdev(sda1)
+md: md0: raid array is not clean -- starting background reconstruction
+raid1: raid set md0 active with 1 out of 2 mirrors
+md: ... autorun DONE
+...
+SGI XFS with ACLs, large block numbers, no debug enabled
+Filesystem "md0": Disabling barriers, not supported by the underlying device
+XFS mounting filesystem md0
+Starting XFS recovery on filesystem: md0 (logdev: internal)
+Ending XFS recovery on filesystem: md0 (logdev: internal)
+eth0: link down
+eth0: started
+eth0: link up, full duplex, speed 1 Gbps
+md: bind&lt;sda1&gt;
+RAID1 conf printout:
+ --- wd:1 rd:2
+ disk 0, wo:0, o:1, dev:sdb1
+ disk 1, wo:1, o:1, dev:sda1
+md: recovery of RAID array md0
+md: minimum _guaranteed_  speed: 1000 KB/sec/disk.
+md: using maximum available idle IO bandwidth (but not more than 200000 KB/sec) for recovery.
+md: using 128k window, over a total of 976562432 blocks.
+Adding 511992k swap on /home/.swapfile.  Priority:-1 extents:1 across:511992k
+...
+
+-bash-3.2# cat /proc/mdstat 
+Personalities : [linear] [raid0] [raid1] [raid6] [raid5] [raid4] 
+md0 : active raid1 sda1[2] sdb1[0]
+      976562432 blocks [2/1] [U_]
+      [============&gt;........]  recovery = 60.4% (590180288/976562432) finish=113.5min speed=56708K/sec
+      
+unused devices: &lt;none&gt;
+
+So xfs has recovered and raid is recovering too.
+
+
+Any idea what the following means?
+Filesystem "md0": Disabling barriers, not supported by the underlying device</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-09 12:45:15</bug_when>
+            <thetext>From the XFS FAQ:  http://xfs.org/index.php/XFS_FAQ
+---
+Write barrier support.
+
+Write barrier support is enabled by default in XFS since kernel version 2.6.17. It is disabled by mounting the filesystem with "nobarrier". Barrier support will flush the write back cache at the appropriate times (such as on XFS log writes). This is generally the recommended solution, however, you should check the system logs to ensure it was successful. Barriers will be disabled and reported in the log if any of the 3 scenarios occurs:
+
+    * "Disabling barriers, not supported with external log device"
+    * "Disabling barriers, not supported by the underlying device"
+    * "Disabling barriers, trial barrier write failed" 
+
+If the filesystem is mounted with an external log device then we currently don't support flushing to the data and log devices (this may change in the future). If the driver tells the block layer that the device does not support write cache flushing with the write cache enabled then it will report that the device doesn't support it. And finally we will actually test out a barrier write on the superblock and test its error state afterwards, reporting if it fails. 
+---</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-09 13:03:31</bug_when>
+            <thetext>Created an attachment (id=3527)
+monitor /home and reboot if we can't read it
+
+I created this little script that will try to read /home every 5s and reboot (commented out right now) the box if it fails.  It also logs the failure event in /root/reboot.log
+
+I've fired off this version (w/o the reboot) on our test system.  If the failure re-occurs, we will see if this script would have fired off correctly. (I'm assuming that ls returns non-zero on the I/O error, but that needs to be confirmed)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-09 13:08:05</bug_when>
+            <thetext>Interesting read on XFS barrier writes in md RAID1 (but I don't think that has anything to do w/ the failure we're tracking down, however)
+
+http://www.nabble.com/md-raid1-passes-barriers,-but-xfs-doesn%27t-use-them--td18082448.html</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-09 22:41:34</bug_when>
+            <thetext>From Phil:
+
+Well, some kind of ‘good’ news... our system under stress finally bombed out overnight... the 16 thread copy had exited as well as my all my ssh sessions. The 8 thread copy was also crapped out, but still on screen, at 1d 9h (based on that, I’m estimating it died at around 2am this morning)....
+
+I rebooted it with a console and saw the original message (XFS internal error XFS_WANT_CORRUPTED_GOTO at line 1563 of file fs/xfs/xfs_allo... cutoff) from the first problem report fly by.
+
+Note: udevmonitor had not produced any output</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-09 23:12:25</bug_when>
+            <thetext>(In reply to comment #13)
+&gt; Interesting read on XFS barrier writes in md RAID1 (but I don't think that has
+&gt; anything to do w/ the failure we're tracking down, however)
+&gt; 
+&gt; http://www.nabble.com/md-raid1-passes-barriers,-but-xfs-doesn%27t-use-them--td18082448.html
+
+I think we should remove the check as well in our xfs module because we are in control of both md raid1 and xfs and we know both of them support 'barrier writes'. I also agree that it has nothing to do with the problem.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mitch O'Brien">Mitch.OBrien@axentra.com</who>
+            <bug_when>2009-08-10 13:03:22</bug_when>
+            <thetext>Created an attachment (id=3528)
+Patch for flashclient
+
+
+Patch for flashclient to support XFS disk repair function</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mitch O'Brien">Mitch.OBrien@axentra.com</who>
+            <bug_when>2009-08-10 13:03:53</bug_when>
+            <thetext>Created an attachment (id=3529)
+Patch for php
+
+Patch for PHP to support XFS disk repair</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mitch O'Brien">Mitch.OBrien@axentra.com</who>
+            <bug_when>2009-08-10 13:04:49</bug_when>
+            <thetext>As per PhilT, submitting patches for flashclient and PHP to support XFS disk repair until a decision is made as to whether to include it or not.
+
+Aside from testing, the main thing the remains to be done is to reboot the unit after the repair is complete.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-10 15:42:48</bug_when>
+            <thetext>Created an attachment (id=3533)
+enable the XFS barriers as per comment #13
+
+As per comment #13, go ahead and enable barriers even tho the md device pretends it does not support them.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-10 15:43:51</bug_when>
+            <thetext>Created an attachment (id=3534)
+remove the smartctl SG_IO ioctl warning polluting the  log</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-10 17:04:21</bug_when>
+            <thetext>(In reply to comment #18)
+&gt; Aside from testing, the main thing the remains to be done is to reboot the unit
+&gt; after the repair is complete.
+We probably don't need to reboot after a repair just run oe-bootinit ensure_home</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-11 12:45:37</bug_when>
+            <thetext>Rough estimate to highlight this as a time consuming task.</thetext>
+          </long_desc>
+      
+          <attachment isobsolete="0" ispatch="1" isprivate="0">
+            <attachid>3527</attachid>
+            <date>2009-08-09 13:03</date>
+            <desc>monitor /home and reboot if we can't read it</desc>
+            <filename>homemonitor.sh</filename>
+            <type>text/plain</type>
+            <size>240</size>
+            <attacher>philippe.tanguay@axentra.com</attacher>        
+
+          </attachment>
+          <attachment isobsolete="0" ispatch="1" isprivate="0">
+            <attachid>3528</attachid>
+            <date>2009-08-10 13:03</date>
+            <desc>Patch for flashclient</desc>
+            <filename>DiskRepair.patch</filename>
+            <type>text/plain</type>
+            <size>27779</size>
+            <attacher>Mitch.OBrien@axentra.com</attacher>        
+
+          </attachment>
+          <attachment isobsolete="0" ispatch="1" isprivate="0">
+            <attachid>3529</attachid>
+            <date>2009-08-10 13:03</date>
+            <desc>Patch for php</desc>
+            <filename>DiskRepair_php.patch</filename>
+            <type>text/plain</type>
+            <size>9050</size>
+            <attacher>Mitch.OBrien@axentra.com</attacher>        
+
+          </attachment>
+          <attachment isobsolete="0" ispatch="1" isprivate="0">
+            <attachid>3533</attachid>
+            <date>2009-08-10 15:42</date>
+            <desc>enable the XFS barriers as per comment #13</desc>
+            <filename>barriers.patch</filename>
+            <type>text/plain</type>
+            <size>571</size>
+            <attacher>philippe.tanguay@axentra.com</attacher>        
+
+          </attachment>
+          <attachment isobsolete="0" ispatch="1" isprivate="0">
+            <attachid>3534</attachid>
+            <date>2009-08-10 15:43</date>
+            <desc>remove the smartctl SG_IO ioctl warning polluting the  log </desc>
+            <filename>logmsg.patch</filename>
+            <type>text/plain</type>
+            <size>507</size>
+            <attacher>philippe.tanguay@axentra.com</attacher>        
+
+          </attachment>
+      
+
+    </bug>
+    <bug>
+          <bug_id>14932</bug_id>
+          
+          <creation_ts>2009-08-08 21:14</creation_ts>
+          <short_desc>Provide an end user mechanism to format the drive</short_desc>
+          <delta_ts>2009-08-15 18:20:15</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>RAID</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          <blocked>14970</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Philippe Tanguay">philippe.tanguay@axentra.com</assigned_to>
+          
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1940</cf_traceability>
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-08 21:14:49</bug_when>
+            <thetext>Netgear has requested that we provide an end user mechansim for formatting the drives.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Philippe Tanguay">philippe.tanguay@axentra.com</who>
+            <bug_when>2009-08-10 13:26:33</bug_when>
+            <thetext>The combined front end and back end work should take about a day.
+
+The idea would be to first try to umount /home by stopped mt-daapd, turning off swap and unmounting /var/cache.  If that fails, kill any processes using /home by having fuser generate a list of PID and kill them off.  Then, we can either reformat the partion and reboot, or delete the partition and let the reboot RAID rebuild process recreate the partition and format it.  I like the 2nd option since our code already takes care of re-creating the proper directories and everything else that is needed.
+
+The UI would simply need to offer the option, and a confirmation dialog (are you really really sure?)</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14679</bug_id>
+          
+          <creation_ts>2009-07-21 12:11</creation_ts>
+          <short_desc>Share: Email - Album share - Images will not show</short_desc>
+          <delta_ts>2009-08-08 19:36:45</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>Media Library</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>CustomerHidden, retest</keywords>
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Peter Poulsen">peter.poulsen@axentra.com</reporter>
+          <assigned_to name="QA Team">qa@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+    
+    <cc>Sylvain.Fetiveau@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="Peter Poulsen">peter.poulsen@axentra.com</qa_contact>
+          
+          <cf_target_distribution>LaCie 2.1, Orange 2.1</cf_target_distribution>
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <flag name="Doc::ReleaseNote" id="470" status="+" setter="richard.dault@axentra.com"/>
+          <long_desc isprivate="0">
+            <who name="Peter Poulsen">peter.poulsen@axentra.com</who>
+            <bug_when>2009-07-21 12:11:58</bug_when>
+            <thetext>Method:
+
+1. Login to Netgear 1.0.0.75 and go to ML
+2. Select a Folder contain 500+ images and select Add to Album - New
+3. Select Share and select Share with friend and click Submit
+4. Put the Netgear under load by playing a movie in one browser and viewing a slideshow in another.
+5. OPen the Share email and view images in slideshow
+
+Result:
+First 10 or 15 images play followedy a small broken image icon. It's not until load is decreased that the images appear after logging in again. There are numerious time out error that occur, some as soon as user logs into share.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-07-22 16:01:22</bug_when>
+            <thetext>I have a gut feeling that this happens because the sharing email was sent before the thumbnails were generated (Peter created the album and did the share at the same time).  Since the box was so busy, the thumbnail wasn't created in time.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-07-30 21:20:01</bug_when>
+            <thetext>Peter, please try this again when the thumbnails have been generated.
+
+If it happens only when the thumbnails are generating, then mark it as a duplicate of that bug).</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-08 19:36:45</bug_when>
+            <thetext>Were the images in the share email itself broken? This should not happen; I make sure to generate them on the fly when I generate the share email.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14891</bug_id>
+          
+          <creation_ts>2009-08-06 10:03</creation_ts>
+          <short_desc>Unable to access Time Machine after Reboot of Mac</short_desc>
+          <delta_ts>2009-08-10 13:46:07</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>Vista/Time Machine Backup</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>Mac OS X 10.5.x</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>retest, Wants-Netgear</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="QA Team">qa@axentra.com</assigned_to>
+          
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1928</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:03:31</bug_when>
+            <thetext>Setup time machine and had it working.. I rebooted my mac and now the Stora
+does not show up in Time Machine anymore</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Barry Long">Barry.Long@axentra.com</who>
+            <bug_when>2009-08-10 11:06:13</bug_when>
+            <thetext>(In reply to comment #0)
+&gt; Setup time machine and had it working.. I rebooted my mac and now the Stora
+&gt; does not show up in Time Machine anymore
+
+Dave, did you check if your stora is mounted on your Mac after you reboot it?</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Barry Long">Barry.Long@axentra.com</who>
+            <bug_when>2009-08-10 13:14:20</bug_when>
+            <thetext>Retested with Netgear build 2.0.0.52 on Mac 10.5. If time machine backup is interrupted by a reboot, it can still do the scheduled backup or "Backup Now", the only thing is that you cannot see the "MyComputers" in Change Disk..before the backup program mount the volume.
+
+The actual time machine backup works despite of a reboot.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-10 13:46:07</bug_when>
+            <thetext>(In reply to comment #2)
+&gt; Retested with Netgear build 2.0.0.52 on Mac 10.5. If time machine backup is
+&gt; interrupted by a reboot, it can still do the scheduled backup or "Backup Now",
+&gt; the only thing is that you cannot see the "MyComputers" in Change Disk..before
+&gt; the backup program mount the volume.
+
+Reason for that is that the backup volume gets mounted off a samba volume. The samba volume (which holds the backup volume) seems to be mounted first before the backup volume shows up on the list.
+
+&gt; 
+&gt; The actual time machine backup works despite of a reboot.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14970</bug_id>
+          
+          <creation_ts>2009-08-14 13:24</creation_ts>
+          <short_desc>Enhance reset button behaviour to format the drive</short_desc>
+          <delta_ts>2009-08-15 18:20:15</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>Hardware</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Task</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          <dependson>14932</dependson>
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Mostafa Hosseini">mostafah@axentra.com</reporter>
+          <assigned_to name="Raman Grewal">Raman.Grewal@axentra.com</assigned_to>
+          <cc>philippe.tanguay@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>1.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-14 13:24:40</bug_when>
+            <thetext>Here are the new specs for reset button:
+- If pressed for &gt; 30s but &lt; 45s do the normal reset procedure
+- If pressed for &gt; 60s but &lt; 75s do the normal reset procedure AND wipe out the drive
+- If pressed for &gt; 75s ignore the button all together</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Raman Grewal">Raman.Grewal@axentra.com</who>
+            <bug_when>2009-08-14 14:42:56</bug_when>
+            <thetext>Now reset to defaults works if you hold between 30 to 45 seconds and you let go, and formatting will work after 60 less tahn 75 and you have to let go of the button in between that.
+
+Note the formatting of hd calls a dummy script right now, that needs to be changed and then will make an new build.
+
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33073</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Raman Grewal">Raman.Grewal@axentra.com</who>
+            <bug_when>2009-08-14 14:57:20</bug_when>
+              <work_time>1.0</work_time>
+            <thetext>hour worked to do:
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33073</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-08-15 18:20:15</bug_when>
+            <thetext>I wanted to finalize the netgear-lifecycle package so I've changed calling of the dummy script to calling the actual script:
+'/sbin/wipe_disk_and_reset_to_defaults.sh'
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=33118
+
+Since reset_to_defaults is part of oe-initscripts, let's add /sbin/wipe_disk_and_reset_to_defaults.sh to that package as well.
+
+Now, I realized that the backend for bug 14932 can be re-used for this task so I've made this bug depend on that one.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>13412</bug_id>
+          
+          <creation_ts>2009-01-02 13:51</creation_ts>
+          <short_desc>Locale support</short_desc>
+          <delta_ts>2009-08-06 11:55:53</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>General</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          <dependson>12134</dependson>
+    
+    <dependson>12525</dependson>
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="Peter Poulsen">peter.poulsen@axentra.com</qa_contact>
+          
+          <cf_target_distribution>LaCie 2.0 GM</cf_target_distribution>
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-01-02 13:51:20</bug_when>
+            <thetext>- allow user to change locale in Flex UI, mobile UI, local login screen
+- use the locale chosen by the visitor on the mobile or regular login page (?)
+- enable a second language and make sure the Flex UI, the mobile UI, the setup wizard and all HTML pages support it</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-04-24 09:15:20</bug_when>
+            <thetext>Re-enabled i18n, fixed i18n bugs
+Moved strings out of images in local login and upload page to make i18n easier
+Use session locale for anonymous users and guests
+http://newrome.axentra.com/viewvc?limit_changes=100&amp;view=rev&amp;revision=27180
+http://newrome.axentra.com/viewvc?limit_changes=100&amp;view=rev&amp;revision=27236</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-04-24 09:21:37</bug_when>
+            <thetext>We're still missing:
+- a way to change locale for Guests and Anonymous visitors in the Flex UI
+  (might be saved in the DB for Guests and in a cookie for Anonymous visitors)
+- a way to change locale in mobile UI for HS Users, Guests and Anonymous Visitors
+- a way to change locale in local login screen
+- a way to use on the CPE the locale chosen in the mobile or regular login page
+- test languages in the Flex UI, mobile UI, upload/download/local_login HTML pages, emails, setup wizard</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-06-30 13:12:35</bug_when>
+            <thetext>(In reply to comment #2)
+&gt; - a way to change locale for Guests and Anonymous visitors in the Flex UI
+&gt;   (might be saved in the DB for Guests and in a cookie for Anonymous visitors)
+LaCie 2.0 GM, Netgear 1.1 Up, Orange 2.0 GM
+
+&gt; - a way to change locale in mobile UI for HS Users, Guests and Anonymous
+&gt; Visitors
+LaCie 2.0 GM, Netgear 1.1 Up, Orange 2.0 GM
+
+&gt; - a way to change locale in local login screen
+LaCie 2.0 GM, Netgear 1.1 Up, Orange 2.0 GM
+
+&gt; - a way to use on the CPE the locale chosen in the mobile or
+&gt; regular login page
+LaCie 2.0 GM, Netgear 1.1 Up, Orange 2.0 GM
+
+&gt; - test languages in the Flex UI, mobile UI, upload/download/local_login HTML
+&gt; pages, emails, setup wizard
+LaCie 2.0 GM, Netgear 1.1 Up, Orange 2.0 GM
+
+The exception to this is that Orange needs everything in French for Orange 2.0 IR2.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-06-30 13:31:29</bug_when>
+            <thetext>(In reply to comment #3)
+&gt; The exception to this is that Orange needs everything in French for Orange 2.0
+&gt; IR2.
+
+For Home Library users, the UI (Flash and HTML) will be in the locale they've chosen. For anonymous/guests, it will be the locale of the browser (French or English).
+
+Note that strings that have not been translated (virtually all those appearing on HTML pages) will still appear in English.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-07-17 12:03:04</bug_when>
+            <thetext>Added more French translations to Flash UI
+
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=31382</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-07-17 17:51:58</bug_when>
+            <thetext>Added Spanish, German and Italian
+
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=31417</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-07-19 20:30:54</bug_when>
+            <thetext>The estimate is for everything, but a lot of it is done in parallel as it gets divided between different people.
+
+We are currently waiting for the last of the translations</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-07-23 09:05:28</bug_when>
+            <thetext>Added more Italian, German and Dutch translations
+http://newrome.axentra.com/viewvc?view=rev&amp;revision=31722</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-07-23 14:39:39</bug_when>
+            <thetext>This bug will stick around only for the French (Flash only) and Spanish translations.  After that we will close this and open separate issues for any non-translated strings.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-04 10:35:15</bug_when>
+            <thetext>The Spanish translations have been added.
+
+Many strings in the UI are still not translated, so we'll keep this bug open until they are all gone.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-06 11:14:45</bug_when>
+            <thetext>There are 8 country and 15 city names to translate in all languages but English and French (which I translated by checking Wikipedia in French).</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-06 11:55:53</bug_when>
+            <thetext>For the record, there is just under 500 strings still to be translated in the UI.
+
+The majority are from the backup module and a fair number are from untranslated countries which we've just added to the preferences.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14472</bug_id>
+          
+          <creation_ts>2009-07-03 13:36</creation_ts>
+          <short_desc>Graphical CPE Status Items (Pie Chart)</short_desc>
+          <delta_ts>2009-08-10 16:47:23</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>Preferences</component>
+          <version>---</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P5</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-07-03 13:36:16</bug_when>
+            <thetext>A request has come in that we introduce more graphical status reports in the CPE.  This could include things such as a Pie chart for remaining space.
+
+(Our competitors have something similar.)</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14687</bug_id>
+          
+          <creation_ts>2009-07-21 15:11</creation_ts>
+          <short_desc>Albums: Shuffle View - Nothing displays if music filter selected on album full of MP3 music files</short_desc>
+          <delta_ts>2009-08-07 10:00:13</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>Albums</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Peter Poulsen">peter.poulsen@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>4.00</estimated_time>
+          <remaining_time>4.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="Peter Poulsen">peter.poulsen@axentra.com</qa_contact>
+          
+          <cf_target_distribution>LaCie 2.1, Orange 2.1</cf_target_distribution>
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Peter Poulsen">peter.poulsen@axentra.com</who>
+            <bug_when>2009-07-21 15:11:48</bug_when>
+            <thetext>Method:
+
+1. Login to Netgear 1.0.0.75 and go to albums
+2. Select an Album containing several 100 MP3 files 
+3. Select Shuffle view 
+4. Select Music filter
+
+Result:
+Nothing appears. If any of the other filter selects are selects, get appropreate message telling user that there are no files of that type.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14878</bug_id>
+          
+          <creation_ts>2009-08-06 09:17</creation_ts>
+          <short_desc>There's no file transfer progress indicator for a HTTP upload.</short_desc>
+          <delta_ts>2009-08-07 15:52:45</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>General</component>
+          <version>---</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P3</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1931</cf_traceability>
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 09:17:13</bug_when>
+            <thetext>Need to add progress bar so user can know what is the progress of the file upload/ download.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14888</bug_id>
+          
+          <creation_ts>2009-08-06 09:58</creation_ts>
+          <short_desc>Display issue with cursor and "Add file" button on upload screen</short_desc>
+          <delta_ts>2009-08-07 13:14:54</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>General</component>
+          <version>---</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1930</cf_traceability>
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 09:58:10</bug_when>
+            <thetext>Screenshot will be attached, red arrow shows the location of the cursor during
+the screenshot. There is nothing under the cursor yet it is a text entry
+cursor and the "Add File" button is lit up.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-06 10:19:29</bug_when>
+            <thetext>Same as bug 14591?</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14894</bug_id>
+          
+          <creation_ts>2009-08-06 10:15</creation_ts>
+          <short_desc>Need to put email test button to ensure the email get sent.</short_desc>
+          <delta_ts>2009-08-06 10:15:22</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>Preferences</component>
+          <version>---</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P4</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1924</cf_traceability>
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:15:01</bug_when>
+            <thetext>Currently, there is no way we can assure that email alert setting is work or
+not. So we need a button to test email alert setting and would also recommend
+having SMTP configuration for users who does not use standard email ports.
+
+We have seen many ISP that does not open the standard ports so that email are
+not being send out.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14895</bug_id>
+          
+          <creation_ts>2009-08-06 10:17</creation_ts>
+          <short_desc>Password criteria popup disappears</short_desc>
+          <delta_ts>2009-08-07 13:22:53</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>General</component>
+          <version>---</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1923</cf_traceability>
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:17:18</bug_when>
+            <thetext>Is it possible to configure the password and confirm password boxes to say that
+you need a number in the password the whole time till you fit the criteria. The
+pop up goes away too quickly while typing in a password. So all you see is a
+red box and not sure what your missing till you move your mouse over the box again.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-06 10:23:24</bug_when>
+            <thetext>Same as bug 13991 and bug 13992?</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14897</bug_id>
+          
+          <creation_ts>2009-08-06 10:24</creation_ts>
+          <short_desc>No logs available on full disk</short_desc>
+          <delta_ts>2009-08-07 13:23:24</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>General</component>
+          <version>---</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P4</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1921</cf_traceability>
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:24:07</bug_when>
+            <thetext>I decided to check a drive failure scenario, and while I got the email
+notifying me of the issue, there's no actual logs anywhere in the user
+interface that I can find to indicate when something actually happened.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14912</bug_id>
+          
+          <creation_ts>2009-08-06 15:12</creation_ts>
+          <short_desc>erroneous help dialog box on initial stora landing page</short_desc>
+          <delta_ts>2009-08-06 15:18:10</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>Landing Page</component>
+          <version>---</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P4</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1937</cf_traceability>
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 15:12:19</bug_when>
+            <thetext>Unusable help dialog box on the page, screenshot is attached, box can only be closed, error points to nothing.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 15:13:43</bug_when>
+            <thetext>Created an attachment (id=3519)
+help.jpg</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-06 15:18:10</bug_when>
+            <thetext>The fix for this is really the same as bug 14453 if it was fixed right.</thetext>
+          </long_desc>
+      
+          <attachment isobsolete="0" ispatch="0" isprivate="0">
+            <attachid>3519</attachid>
+            <date>2009-08-06 15:13</date>
+            <desc>help.jpg</desc>
+            <filename>showattachment3.jpg</filename>
+            <type>image/jpeg</type>
+            <size>56591</size>
+            <attacher>David.McCormack@axentra.com</attacher>        
+
+          </attachment>
+      
+
+    </bug>
+    <bug>
+          <bug_id>14925</bug_id>
+          
+          <creation_ts>2009-08-07 09:49</creation_ts>
+          <short_desc>When setting the media filter, numerous formats are not properly included</short_desc>
+          <delta_ts>2009-08-11 13:59:09</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>Media Library</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Roby Brisson">roby.brisson@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+    
+    <cc>Sylvain.Fetiveau@axentra.com</cc>
+          <estimated_time>2.00</estimated_time>
+          <remaining_time>2.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1948</cf_traceability>
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Roby Brisson">roby.brisson@axentra.com</who>
+            <bug_when>2009-08-07 09:49:44</bug_when>
+            <thetext>Mostly this appears to relate to video files, but it would seem that there are 
+other formats missing. With no means to add formats, this seems odd.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-07 13:45:59</bug_when>
+            <thetext>*** Bug 14926 has been marked as a duplicate of this bug. ***</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-08 19:31:05</bug_when>
+            <thetext>If there are formats we're missing, just list them and if we support them, we can add them.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-11 13:59:09</bug_when>
+            <thetext>For this release, we will manually add the missing types and we can make it a future consideration to provide a way for the users to add it.
+
+Note: The danger with adding new types of videos is that we need to see if they work (and sometimes that's no possible due to the many combinations) so that we know if they work or not to be able to black list them if necessary.  So a lot of QA will be required for this feature.
+
+If Netgear wants this, they'll have to provide the list of formats otherwise we'll just go search blindly and hope we get the once they want.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14964</bug_id>
+          
+          <creation_ts>2009-08-13 13:58</creation_ts>
+          <short_desc>Only play supported video/audio formats by default.  All others will display a confirmation dialog.</short_desc>
+          <delta_ts>2009-08-13 15:24:56</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>General</component>
+          <version>OR-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Orange 2.0 GM</target_milestone>
+          
+          <blocked>14887</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Richard Dault">richard.dault@axentra.com</reporter>
+          <assigned_to name="Richard Dault">richard.dault@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          <cf_target_distribution>LaCie 2.0 GM, Netgear 1.1 Up</cf_target_distribution>
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-13 13:58:43</bug_when>
+            <thetext>Since there are too many problems with the external players and there's not much we can do about it, the behaviour will be changed so that only .flv, .mp3, h264 and mov are played like they are now.  All other formats will display a dialog saying that the video may or may not work and the user can try playing it anyway, download it, or cancel.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Richard Dault">richard.dault@axentra.com</who>
+            <bug_when>2009-08-13 15:24:56</bug_when>
+            <thetext>I'm going to start working on this, but Greg may have to finish it when he gets back as I don't want to risk destabilizing the cinema application this close to a release.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>13760</bug_id>
+          
+          <creation_ts>2009-03-11 09:25</creation_ts>
+          <short_desc>[Backup] USB Web Services</short_desc>
+          <delta_ts>2009-07-15 11:40:22</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Web 2.0 Interface</product>
+          <component>MySafe</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Task</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Orange 2.0 GM</target_milestone>
+          <dependson>13759</dependson>
+          <blocked>13761</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</reporter>
+          <assigned_to name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</assigned_to>
+          <cc>richard.dault@axentra.com</cc>
+          <estimated_time>10.00</estimated_time>
+          <remaining_time>10.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          <qa_contact name="QA Team">qa@axentra.com</qa_contact>
+          
+          <cf_target_distribution>LaCie 2.0 GM, Netgear 1.1 Up</cf_target_distribution>
+          
+          
+
+      
+          <group>Web 2.0 Interface</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-03-11 09:25:58</bug_when>
+            <thetext>We need to support the same services as in 1.6 (format, mount, unmount, I assume).</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-06-12 15:29:33</bug_when>
+            <thetext>We also need to disable backup/restore if there is no mounted device.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-07-08 19:33:31</bug_when>
+            <thetext>This is a high runner candidate to be pushed out.
+
+Please confirm with DaveM prior to working on this.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14946</bug_id>
+          
+          <creation_ts>2009-08-11 13:33</creation_ts>
+          <short_desc>Delete the Time Machine backup</short_desc>
+          <delta_ts>2009-08-14 14:38:47</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Backend [The Box]</product>
+          <component>General</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          <dependson>14945</dependson>
+          <blocked>14971</blocked>
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</assigned_to>
+          <cc>Mitch.OBrien@axentra.com</cc>
+    
+    <cc>Sylvain.Fetiveau@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Backend [The Box]</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-11 13:33:54</bug_when>
+            <thetext>We need to be able to delete the Time Machine backup from the user interface (most likely preferences).</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-11 16:41:48</bug_when>
+            <thetext>Is this something I can help with if I have time before my vacations?
+Do we want a modal dialog while we're doing it or do we want to do it in the background? etc.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-14 14:38:47</bug_when>
+            <thetext>I (SylvainF) won't have time to implement that feature so here are some dev notes:
+- the other ComputersBackup function are in the utility plugin of systemproxy and contain "ComputersBackup" in their name. That one should follow suite. 
+- the home dir of ComputersBackup is /home/0backups
+- Don't forget to remove the hidden files
+- please talk to Mitch who will likely do the PHP and Flash part of this bug</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14787</bug_id>
+          
+          <creation_ts>2009-07-29 10:16</creation_ts>
+          <short_desc>Netgear 2.0/Portal: Sign-in button has broken.</short_desc>
+          <delta_ts>2009-08-11 16:27:43</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>Websites</product>
+          <component>www.mystora.com</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>helpWanted</keywords>
+          <priority>P2</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Roby Brisson">roby.brisson@axentra.com</reporter>
+          <assigned_to name="Sylvain Lambert">sylvainl@axentra.com</assigned_to>
+          <cc>davidp@axentra.com</cc>
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>3.00</actual_time>
+          
+          <qa_contact name="Peter Poulsen">peter.poulsen@axentra.com</qa_contact>
+          
+          
+          
+          
+
+      
+          <group>Websites</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Roby Brisson">roby.brisson@axentra.com</who>
+            <bug_when>2009-07-29 10:16:58</bug_when>
+            <thetext>Created an attachment (id=3493)
+netgear portal button
+
+Sign-in button has broken.
+
+browser: IE8
+
+See screenshot... dunno when that happen :)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Mostafa Hosseini">mostafah@axentra.com</who>
+            <bug_when>2009-07-30 09:28:44</bug_when>
+            <thetext>Happens in all languages</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David Perry">davidp@axentra.com</who>
+            <bug_when>2009-07-30 09:32:36</bug_when>
+            <thetext>It also appears in IE7, at least on my laptop.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Lambert">sylvainl@axentra.com</who>
+            <bug_when>2009-07-30 09:34:25</bug_when>
+            <thetext>i will need the help of a programmer for this. Can someone help please !</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David Perry">davidp@axentra.com</who>
+            <bug_when>2009-07-30 09:36:27</bug_when>
+            <thetext>Sylvain, can you give me a link to where you first learned about the button trick you're using?  I'll analyze it and see if I can find a fix.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="David Perry">davidp@axentra.com</who>
+            <bug_when>2009-07-31 11:49:08</bug_when>
+              <work_time>3.0</work_time>
+            <thetext>I've played around with this for a few hours, but I can't get it to look right in IE7.  We may have to use a different CSS strategy for these buttons.
+
+Fortunately, we're going to tell Netgear that it'll be fixed in time for the update, so we have a bit of time to work on it.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-11 16:27:43</bug_when>
+            <thetext>It looks like this:
+http://monc.se/kitchen/59/scalable-css-buttons-using-png-and-background-colors
+
+I'd stay away from those CSS hacks, it's nothing but maintenance hell.</thetext>
+          </long_desc>
+      
+          <attachment isobsolete="0" ispatch="0" isprivate="0">
+            <attachid>3493</attachid>
+            <date>2009-07-29 10:16</date>
+            <desc>netgear portal button</desc>
+            <filename>portal page button.jpg</filename>
+            <type>image/jpeg</type>
+            <size>75091</size>
+            <attacher>roby.brisson@axentra.com</attacher>        
+
+          </attachment>
+      
+
+    </bug>
+    <bug>
+          <bug_id>14089</bug_id>
+          
+          <creation_ts>2009-05-14 09:26</creation_ts>
+          <short_desc>Improve Time Machine support</short_desc>
+          <delta_ts>2009-08-15 18:32:35</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>Vista/Time Machine Backup</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>ASSIGNED</bug_status>
+          
+          
+          
+          
+          <keywords>Task, Wants-Netgear, Wants-SMT</keywords>
+          <priority>P1</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.0 GM</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Yannick Guay">yannickg@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          <cc>David.McCormack@axentra.com</cc>
+    
+    <cc>mostafah@axentra.com</cc>
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          <cf_target_distribution>Netgear 1.1 Up, Touch M2</cf_target_distribution>
+          
+          <cf_traceability>SF1919</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-05-14 09:26:49</bug_when>
+            <thetext>Right now, during setup, we ask user whether they want Time Machine to be configured. If they answer no we should give them the opportunity to do so at a later time.
+
+The Configure Time Machine Scripts should be installed as part of the packages so user could run it any time they want. And we should inform users when they answer no that they can do it later.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-06 11:13:34</bug_when>
+            <thetext>*** Bug 14898 has been marked as a duplicate of this bug. ***</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-10 11:08:54</bug_when>
+            <thetext>This bug now relates to making improvements to our support for Time Machine
+
+We'll need these 4 items to be addressed:
+-Allow Time Machine to be configured later (4h)
+-Prompt users with backup volume size (with default volume size suggestion) 4h
+-Allow deletion of previous backup volume (4h)
+-Prompt users when previous Time Machine Setup is found (4h)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-11 09:07:31</bug_when>
+            <thetext>Update:
+
+We've discussed this item and we've decided that we'll be using a 2 phase approach for the Time Machine (and Vista Backup) effort:
+Phase 1 (now):
+-Allow Time Machine to be configured later (4h)
+-Hard code the volume size to 200GB
+-Change documentation so users will be backing up to specific backup user account instead of their own account. This will allow us to introduce quotas in phase 2.
+-Prompt users when previous Time Machine Setup is found (4h)
+
+Phase 2 (later, as an update):
+-Add a web service call to get quota from web server and create the backup volume sparse bundle with that given size. (4h)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-11 09:39:49</bug_when>
+            <thetext>adjusting estimates: 1 day for phase one.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-11 15:19:01</bug_when>
+            <thetext>made all pieces self contained
+http://newrome.axentra.com/viewvc/?rev=32838&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=32836&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=32839&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=32840&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=32841&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=32842&amp;view=rev
+
+made app ask user confirmation when previous configuration is found:
+http://newrome.axentra.com/viewvc/?rev=32892&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=32893&amp;view=rev</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-13 10:37:01</bug_when>
+            <thetext>added missing strings for Netgear (all English)
+http://newrome.axentra.com/viewvc/?rev=32897&amp;view=rev
+
+Netgear branch for prompt user with "already setup" message
+http://newrome.axentra.com/viewvc/?rev=32896&amp;view=rev
+
+adding script that checks if Time Machine was setup already
+http://newrome.axentra.com/viewvc/?rev=32895&amp;view=rev</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-13 13:47:26</bug_when>
+            <thetext>generic brand support for Time Machine
+http://newrome.axentra.com/viewvc/?rev=33014&amp;view=rev
+
+changed wording of English message
+http://newrome.axentra.com/viewvc/?rev=33012&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=33011&amp;view=rev
+
+replaced HIPSERV with STORA
+http://newrome.axentra.com/viewvc/?rev=33008&amp;view=rev
+
+stuff that I forgot to commit in my previous commit of work on the task:
+http://newrome.axentra.com/viewvc/?rev=33017&amp;view=rev
+http://newrome.axentra.com/viewvc/?rev=33016&amp;view=rev</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-13 14:23:27</bug_when>
+            <thetext>http://newrome.axentra.com/viewvc/?rev=33027&amp;view=rev
+changed HipSev shared volume name from "MyComputers" to "ComputersBackup$"</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-13 14:33:19</bug_when>
+            <thetext>http://newrome.axentra.com/viewvc/?rev=33028&amp;view=rev
+when create sparsebundle ensure any previous one gets deleted</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-15 07:36:18</bug_when>
+            <thetext>change the help to match the new features.
+http://newrome.axentra.com/viewvc/?rev=33074&amp;view=rev</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14681</bug_id>
+          
+          <creation_ts>2009-07-21 13:15</creation_ts>
+          <short_desc>Netgear 2.0/Desktop Applications: uninstalling doesn't remove top level folder from start menu</short_desc>
+          <delta_ts>2009-08-11 10:56:11</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>HipServ Agent</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Orange 2.0 GM</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Roby Brisson">roby.brisson@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          <cf_target_distribution>LaCie 2.0 GM, Netgear 1.1 Up</cf_target_distribution>
+          
+          
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Roby Brisson">roby.brisson@axentra.com</who>
+            <bug_when>2009-07-21 13:15:34</bug_when>
+            <thetext>OS: Vista
+
+Uninstalled desktop applications.
+Go to start -&gt; Programs.  Netgear folder is still there but can't be expanded (because it's empty as negtear was uninstalled).
+
+I noticed the same thing with recent orange desktop apps this morning too, now it's reproduced :)</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-11 10:56:11</bug_when>
+            <thetext>this might be really tricky too: 8hours</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14892</bug_id>
+          
+          <creation_ts>2009-08-06 10:07</creation_ts>
+          <short_desc>Uninstall of desktop applications should remove credentials</short_desc>
+          <delta_ts>2009-08-12 13:44:23</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>HipServ Setup CD</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1927</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:07:24</bug_when>
+            <thetext>Created an attachment (id=3516)
+screenshot.jpg
+
+The uninstallation of desktop mirror should delete any saved credentials for desktop mirror.
+
+From Netgear:
+  Stora Agent 1.3.2.930
+  Desktop Mirror 2.1.1.0
+
+  Failed to Synchronized as it is lookking for my old stora name.
+
+  Screenshot attached.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-12 13:44:23</bug_when>
+            <thetext>Note:
+This bug has been filed before and we failed to conform to this because each user gets its own set of preferences for Desktop Mirror and it is rather difficult for the uninstaller to delete the preference folder for all users on the computer.</thetext>
+          </long_desc>
+      
+          <attachment isobsolete="0" ispatch="0" isprivate="0">
+            <attachid>3516</attachid>
+            <date>2009-08-06 10:07</date>
+            <desc>screenshot.jpg</desc>
+            <filename>showattachment.jpg</filename>
+            <type>image/jpeg</type>
+            <size>19939</size>
+            <attacher>David.McCormack@axentra.com</attacher>        
+
+          </attachment>
+      
+
+    </bug>
+    <bug>
+          <bug_id>14899</bug_id>
+          
+          <creation_ts>2009-08-06 10:30</creation_ts>
+          <short_desc>Mac Time Machine Shows up as Stora instead of my hostname</short_desc>
+          <delta_ts>2009-08-07 13:24:34</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>Vista/Time Machine Backup</component>
+          <version>HS-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P4</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1918</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:30:41</bug_when>
+            <thetext>My Stora is called Speed-Stora but in Time Machine it shows up as just Stora.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14900</bug_id>
+          
+          <creation_ts>2009-08-06 10:33</creation_ts>
+          <short_desc>Stora Software setup gives no indication of which unit is which</short_desc>
+          <delta_ts>2009-08-07 13:24:47</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>HipServ Setup CD</component>
+          <version>NA</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P4</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1916</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 10:33:34</bug_when>
+            <thetext>Using the setup application on the CD-ROM, it propogates a list of available
+Stora units on the network. However there is no indication which stora is
+which. I cannot determine which one has already been configured, cannot select
+an IP address and cause the LED's to blink, nor do I have a serial number
+displayed.
+
+We need to display Mac Address associated with the unit and IP address.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-06 11:07:13</bug_when>
+            <thetext>FWIW: multiple units is not officially supported. it's just there so it's easy for us to setup on our corporate LAN.</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14908</bug_id>
+          
+          <creation_ts>2009-08-06 15:08</creation_ts>
+          <short_desc>"Reset' option in software setup is misleading</short_desc>
+          <delta_ts>2009-08-06 15:18:53</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>HipServ Setup CD</component>
+          <version>NA</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P5</priority>
+          <bug_severity>enhancement</bug_severity>
+          <target_milestone>Netgear 1.2</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>0.00</estimated_time>
+          <remaining_time>0.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1934</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-06 15:08:55</bug_when>
+            <thetext>The setup application on the CD has a reset option, however the menu fails to
+indicate this is only a reset of the network settings and admin password.
+Small text on the main menu giving a 1 sentence explanation would suffice.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Sylvain Fetiveau">Sylvain.Fetiveau@axentra.com</who>
+            <bug_when>2009-08-06 15:10:46</bug_when>
+            <thetext>Isn't that part of the setup CD rather than the config wizard?</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14947</bug_id>
+          
+          <creation_ts>2009-08-11 14:05</creation_ts>
+          <short_desc>Welcome screen on Setup CD is stuck and freeze</short_desc>
+          <delta_ts>2009-08-11 14:26:55</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>HipServ Setup CD</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          <keywords>Wants-Netgear</keywords>
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">David.McCormack@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>8.00</estimated_time>
+          <remaining_time>8.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          <cf_traceability>SF1954</cf_traceability>
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">David.McCormack@axentra.com</who>
+            <bug_when>2009-08-11 14:05:16</bug_when>
+            <thetext>The welcome screen "Setup is Initializing..." is stuck and we have to shut down the computer. Ctrl+Alt+Del to kill the task does not work.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-11 14:26:55</bug_when>
+            <thetext>It's working all nicely for me, all I can think of is a bad CD burn.
+
+What version of the software they're using? 1.0GM?
+
+OS version?
+
+Language of OS?
+
+Can we ask them to copy from CD to root drive (C:\setupCD for example) and run it. if it doesn't work ask them to turn on tracing by editing tracing=1 in c:\setupCD\Setup\settings.ini</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+    <bug>
+          <bug_id>14963</bug_id>
+          
+          <creation_ts>2009-08-13 13:45</creation_ts>
+          <short_desc>Changes to Windows Backup to comply with new rules</short_desc>
+          <delta_ts>2009-08-15 18:31:59</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>HipServ Desktop Applications</product>
+          <component>Vista/Time Machine Backup</component>
+          <version>NG-2.0.0</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P1</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>Netgear 1.1 Up</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="Yannick Guay">yannickg@axentra.com</reporter>
+          <assigned_to name="Yannick Guay">yannickg@axentra.com</assigned_to>
+          
+          <estimated_time>4.00</estimated_time>
+          <remaining_time>4.00</remaining_time>
+          <actual_time>0.00</actual_time>
+          
+          
+          
+          
+          
+          
+
+      
+          <group>HipServ Desktop Applications</group>
+
+      
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-13 13:45:04</bug_when>
+            <thetext>The share name and username/password have changed, update the HTML to comply to it.</thetext>
+          </long_desc>
+          <long_desc isprivate="0">
+            <who name="Yannick Guay">yannickg@axentra.com</who>
+            <bug_when>2009-08-15 07:37:21</bug_when>
+            <thetext>changed the help to match the new features (english only)
+http://newrome.axentra.com/viewvc/?rev=33076&amp;view=rev</thetext>
+          </long_desc>
+      
+      
+
+    </bug>
+
+</bugzilla>

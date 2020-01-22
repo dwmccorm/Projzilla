@@ -1,0 +1,74 @@
+bug_id,opendate,bug_severity,priority,rep_platform,assigned_to,bug_status,product,component,target_milestone,estimated_time,remaining_time,actual_time,percentage_complete,deadline,short_short_desc
+26342,6/22/2007 11:55,major,P1,task,anders.torgerson@efrontier.com,NEW,Engineering,Database,9.11.1,1,0,0,,,transactions rollover
+41236,6/21/2008 12:32,normal,P1,feature,jian.liu@efrontier.com,NEW,Engineering,User Interface,9.11.1,0,0,0,,,Display dates for which click data is not yet available.
+42557,7/21/2008 1:05,normal,P1,feature,shashank.ramaprasad@efrontier.com,NEW,Engineering,API,9.11.1,33,0,0,,,SmartSyncToSymprod
+46272,10/9/2008 14:21,normal,P2,task,neel.phadnis@efrontier.com,NEW,Engineering,core-api,9.11.1,0,0,0,,,Revenue: TS and Ops documentation and tools
+47673,11/4/2008 5:21,normal,P2,task,praveen@efrontier.com,NEW,Engineering,User Interface,9.11.1,0,0,0,,11/11/2008,sync console on the top of symprod
+50369,12/22/2008 4:03,normal,P2,feature,vishwa@efrontier.com,NEW,Engineering,CM Bulksheets,9.11.1,0,0,0,,,[ campaign management ] 'Negative' Match type for Google website keywords are not getting uploaded to EF staging tables.
+51410,1/15/2009 9:48,normal,P3,enhancement,anders.torgerson@efrontier.com,NEW,Engineering,Reports,9.11.1,0,0,0,,,"[New KW Report]: Advanced Option, Advanced Filters, Column menu items not in alphabetical order"
+51967,1/23/2009 17:13,normal,P1,enhancement,kishore@efrontier.com,REOPENED,Engineering,User Interface,9.11.1,3,0,0,,,[Contextual help] Add HELP links to portfolio settings page
+54270,3/6/2009 4:18,normal,P2,enhancement,vishwa@efrontier.com,NEW,Engineering,CM Bulksheets,9.11.1,0,0,0,,,Upload Tracking - enable for No-EF redirect
+54853,3/17/2009 21:49,normal,P3,enhancement,vishwa@efrontier.com,ASSIGNED,Engineering,CM Bulksheets,9.11.1,3,0,0,,,Append Params - allow user to specify the value returned by an EF dynamic parameter
+55243,3/25/2009 11:30,major,P1,enhancement,shashank.ramaprasad@efrontier.com,NEW,Engineering,Account Management,9.11.1,0,0,0,,,Enhance Logic Behind Mini Execute Sequence
+55340,3/27/2009 10:25,normal,P2,enhancement,shrini.mohan@efrontier.com,NEW,Engineering,Optimizer Algorithms,9.11.1,0,0,0,,,Please add first_page_cpc column to ad_status_click_data_30 table.
+56142,4/15/2009 21:48,critical,P0,task,gshah@efrontier.com,NEW,Engineering,CM Bulksheets,9.11.1,1,0,0,,,S machine jobs' logs not monitored by Ops
+56261,4/20/2009 6:17,normal,P2,task,subhashini.kalathinathan@efrontier.com,NEW,Engineering,API,9.11.1,0,0,0,,,Automate protocol buffer python and java side code of EF side
+56330,4/21/2009 13:18,normal,P1,feature,shashank.ramaprasad@efrontier.com,NEW,Engineering,Portfolio Workflow,9.11.1,3,0,0,,,"Disable ""Validate Portfolio"" tab in UI [retire]"
+56574,4/27/2009 16:38,normal,P2,enhancement,neel.phadnis@efrontier.com,NEW,Engineering,Reports,9.11.1,0,0,0,,,[New Performance Reports] Ad group dimension (WAS -> missing ad group names in the ad group report)
+56790,5/1/2009 11:19,normal,P1,enhancement,anand.dantu@efrontier.com,NEW,Engineering,Portfolio Workflow,9.11.1,0.5,0,0,,,Awkward/unintuitive flow for various assignment screens
+56877,5/4/2009 13:30,normal,P2,task,mehul.desai@efrontier.com,NEW,Engineering,User Interface,9.11.1,0,0,0,,,Create a Bid Unit Details Report (for new trend charts)
+56884,5/4/2009 15:23,normal,P1,feature,rahul.nim@efrontier.com,NEW,Engineering,Multiple Data Centers,9.11.1,0,0,0,,,Simplifying datacenter/namespace specification
+57268,5/14/2009 5:10,normal,P2,task,preethyp@efrontier.com,NEW,Engineering,Schema Change,9.11.1,0,0,0,,,userdbs: Create table adinstid_last_modified_time
+57566,5/21/2009 14:36,normal,P2,enhancement,anders.torgerson@efrontier.com,NEW,Engineering,Reports,9.11.1,0,0,0,,,[Trending] - SEA Report Ordering
+57858,5/29/2009 16:44,normal,P1,feature,neel.phadnis@efrontier.com,NEW,Engineering,Portfolio Workflow,9.11.1,2,0,0,,,[Portfolio Settings] Option to set DOM and DOW budgets as %
+58256,6/11/2009 7:14,normal,P2,task,praveen@efrontier.com,NEW,Engineering,Sync,9.11.1,0,0,0,,,Measure impact of current md5sum deployment
+58605,6/21/2009 22:14,normal,P2,feature,ananth@efrontier.com,NEW,Engineering,Sync,9.11.1,0,0,0,,,Google Adwords API v2009
+58726,6/23/2009 18:38,normal,P2,enhancement,mehul.desai@efrontier.com,NEW,Engineering,Reports,9.11.1,0,0,0,,,Expediait (userid : 1407) - Reporting currency symbol problem
+58854,6/26/2009 14:25,normal,P2,feature,hari@efrontier.com,NEW,Engineering,DisplayInitiative,9.11.1,0,0,0,,,Warehouse: Timezone and warehouse
+58856,6/26/2009 14:53,normal,P1,task,anand@efrontier.com,NEW,Engineering,DisplayInitiative,9.11.1,1.5,0,0,,,Update P3P compact headers
+58917,6/29/2009 17:32,major,P1,enhancement,hari@efrontier.com,NEW,Engineering,DisplayInitiative,9.11.1,0,0,0,,,"For display, parse and associate offline conversion in feed (with transaction id)"
+59300,7/8/2009 15:46,normal,P1,feature,vishwa@efrontier.com,NEW,Engineering,CM Bulksheets,9.11.1,3,0,0,,,Support for Negatives in Bulksheets on all 3 SEs
+59311,7/8/2009 17:49,normal,P1,feature,shashank.ramaprasad@efrontier.com,NEW,Engineering,API,9.11.1,3,0,0,,,AMachineIndependence
+59391,7/13/2009 11:02,critical,P1,task,shrini.mohan@efrontier.com,NEW,Engineering,Models,9.11.1,3,0,0,,,models using too much memory
+59468,7/14/2009 16:32,normal,P1,enhancement,anand@efrontier.com,NEW,Engineering,DisplayInitiative,9.11.1,1,0,0,,,Operationalize segmentation JS
+59522,7/15/2009 17:58,normal,P1,feature,mehul.desai@efrontier.com,NEW,Engineering,User Interface,9.11.1,2,0,0,,,[UMBRELLA] Retire legacy reports [Retire Reports]
+59525,7/15/2009 18:28,normal,P1,task,mehul.desai@efrontier.com,NEW,Engineering,Reports,9.11.1,2,0,0,,,[Retire Reports] Retire legacy reports - UI related changes
+59650,7/21/2009 5:14,normal,P2,task,preethyp@efrontier.com,NEW,Engineering,API,9.11.1,0,0,0,,,Unique value violation in ad_constraint_rules table
+59706,7/22/2009 9:10,normal,P3,enhancement,mehul.desai@efrontier.com,NEW,Engineering,Reports,9.11.1,0,0,0,,,[New Performance Reports] campaign level report not showing unassigned campaigns when portfolioname col present
+59775,7/24/2009 13:02,normal,P2,feature,anders.torgerson@efrontier.com,NEW,Engineering,Reports,9.11.1,0,0,0,,,[New Performance Reports] Discover & auto-add new transaction properties
+59780,7/24/2009 14:47,normal,unset,feature,mehul.desai@efrontier.com,NEW,Engineering,Reports,9.11.1,10,0,0,,,[New Performance Reports] Discover & auto-add new transaction properties
+59841,7/27/2009 12:02,normal,unset,feature,rahul.nim@efrontier.com,NEW,Engineering,Retail,9.11.1,10,0,0,,,RetailProduct  UMBRELLA
+59907,7/29/2009 7:14,normal,P3,task,ananth@efrontier.com,NEW,Engineering,Sync,9.11.1,0,0,0,,,inculde more adgroup details in md5sum calculation
+59971,7/30/2009 11:49,normal,P2,task,shrini.mohan@efrontier.com,NEW,Engineering,Models,9.11.1,0,0,0,,,verify adinstance_click_data_recent
+60022,7/31/2009 16:41,normal,P2,enhancement,anders.torgerson@efrontier.com,NEW,Engineering,User Interface,9.11.1,0,0,0,,8/31/2009,UI: Make Search Engine Account available in the Dashboard column customizer
+60044,8/3/2009 10:44,normal,P3,enhancement,vishwa@efrontier.com,NEW,Engineering,CM Bulksheets,9.11.1,0,0,0,,,submit request to symprod for bulk keyword update.
+60213,8/7/2009 9:49,normal,P1,task,hari@efrontier.com,NEW,Engineering,Schema Change,9.11.1,0,0,0,,,eventdb: Additional column for configuring smaller impression validity in cross channel reports
+60403,8/14/2009 23:37,normal,unset,feature,george.su@efrontier.com,NEW,Engineering,Schema Change,9.11.1,0,0,0,,,userdbs: schema changes for Labels.
+60412,8/15/2009 1:34,normal,P2,feature,kvakati@efrontier.com,NEW,Engineering,Bulksheets,9.11.1,0,0,0,,,Enhancements to bulksheets infrastructure for Retail support.
+60413,8/16/2009 10:05,normal,P2,enhancement,praveen@efrontier.com,NEW,Engineering,Symprod,9.11.1,0,0,0,,,Symprod visibility to show job error information
+60466,8/18/2009 4:50,normal,P2,task,praveen@efrontier.com,NEW,Engineering,Symprod,9.11.1,0,0,0,,,Discontinue invocation of create_ads_existing_cgroups from outside smart sync
+60506,8/19/2009 4:41,normal,P2,task,praveen@efrontier.com,NEW,Engineering,Symprod,9.11.1,111,0,0,,,Umbrella bug: Bulksheet to symprod.
+60689,8/26/2009 17:37,normal,P2,feature,ennigo@efrontier.com,NEW,Engineering,Help,9.11.1,0,0,0,,,[Contextual help] Add help set for direct access clients
+60762,8/31/2009 9:21,normal,P1,feature,kunal@efrontier.com,NEW,Engineering,RulesBasedBidding,9.11.1,2,0,0,,,EnhancedConstraints
+60860,9/4/2009 1:32,normal,unset,feature,rahul.nim@efrontier.com,NEW,Engineering,core-api,9.11.1,10,0,0,,,Creative Template Management
+60861,9/4/2009 1:34,normal,unset,feature,rahul.nim@efrontier.com,NEW,Engineering,core-api,9.11.1,10,0,0,,,Creative Management
+60862,9/4/2009 1:39,normal,unset,feature,george.su@efrontier.com,NEW,Engineering,Schema Change,9.11.1,0,0,0,,,userdbs: Schema changes for creative template management
+60865,9/4/2009 1:43,normal,unset,feature,jian.liu@efrontier.com,NEW,Engineering,core-api,9.11.1,0,0,0,,,UI for creative template management
+61037,9/14/2009 10:43,normal,P2,enhancement,anders.torgerson@efrontier.com,NEW,Engineering,Dashboard,9.11.1,0,0,0,,,Sorting based on cost for different currencies in search engine/portfolio tabs
+61162,9/18/2009 11:37,normal,P2,enhancement,neel.phadnis@efrontier.com,REOPENED,Engineering,core-api,9.11.1,3,0,0,,,Detect trasaction state on connection pool
+61168,9/18/2009 14:29,normal,P2,task,subhashini.kalathinathan@efrontier.com,NEW,Engineering,Revenue Data,9.11.1,0,0,0,,,Define revenue feed and plugin dirs in APP_DIRS for both parser versions
+61393,9/30/2009 5:02,normal,P2,enhancement,vishwa@efrontier.com,NEW,Engineering,CM Bulksheets,9.11.1,0,0,0,,,Bulksheet Post should submit request to symprod
+61394,9/30/2009 5:09,normal,P2,task,praveen@efrontier.com,NEW,Engineering,Schema Change,9.11.1,0,0,0,,,userdbs: schema changes for Bulksheet post to symprod.
+61413,10/1/2009 4:39,normal,P1,enhancement,praveen@efrontier.com,NEW,Engineering,Sync,9.11.1,0,0,0,,,Enable out of sync detection using md5sum on all dbs
+61456,10/2/2009 20:51,normal,P1,enhancement,anand@efrontier.com,NEW,Engineering,DisplayInitiative,9.11.1,1,0,0,,,Update privacy policy page and create opt-out/opt-in page
+61487,10/5/2009 14:16,major,P1,feature,shashank.ramaprasad@efrontier.com,NEW,Engineering,Scheduler,9.11.1,3,0,0,,,AMachineIndependencePhaseII
+61584,10/7/2009 18:01,normal,P1,task,pradeep@efrontier.com,NEW,Engineering,Reports,9.11.1,0,0,0,,,"[Retire Reports] On legacy Reports Archive, add notice on Edit link that profiles will go away"
+61608,10/8/2009 12:56,normal,P1,enhancement,mehul.desai@efrontier.com,NEW,Engineering,Help,9.11.1,2,0,0,,,[Contextual help] Add help links on Reports form
+61713,10/13/2009 4:53,normal,P2,enhancement,sriram@efrontier.com,ASSIGNED,Engineering,Unidentified,9.11.1,0,0,0,,,Changes in fix_orphans.py
+61791,10/15/2009 9:27,major,P1,feature,ganga@efrontier.com,NEW,Engineering,Scheduler,9.11.1,0,0,0,,,scheduler support for simultaneously setting dbtag and apphost loadbalance limits
+61855,10/19/2009 10:58,normal,P2,task,alex@efrontier.com,NEW,Engineering,Configuration,9.11.1,0,0,0,,,Change production to use nas file server for all reporting  files.
+61908,10/21/2009 2:56,normal,P2,enhancement,praveen@efrontier.com,NEW,Engineering,Symprod,9.11.1,0,0,0,,,One-off full sync requests from tsconsole submit request screen
+61909,10/21/2009 3:07,normal,P1,enhancement,praveen@efrontier.com,NEW,Engineering,Symprod,9.11.1,0,0,0,,,symcons switch to configure module properties.
+61912,10/21/2009 3:17,normal,P2,task,praveen@efrontier.com,NEW,Engineering,Schema Change,9.11.1,0,0,0,,,userdbs: add new source type 'One Off Full Sync'
+,,,,,,,,,,,,,,,
+,,,,,,,,,,,,,,,

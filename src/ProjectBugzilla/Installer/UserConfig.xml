@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!--File written on: 9/10/2009 12:45:16 PM-->
+<config>
+    <pair>
+        <key>SimpleWizardBugzillaXMLFile</key>
+        <value>C:\Program Files\Projzilla\SampleData\bugs.xml</value>
+    </pair>
+    <pair>
+        <key>SimpleWizardProjectFile</key>
+        <value>C:\Program Files\Projzilla\SampleData\bugs.mpp</value>
+    </pair>
+    <pair>
+        <key>BlankProjectFile</key>
+        <value>Config\Blank.mpp</value>
+    </pair>
+    <pair>
+        <key>ShowBugzillaFields</key>
+        <value>true</value>
+    </pair>
+</config>

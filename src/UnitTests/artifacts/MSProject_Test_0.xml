@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE bugzilla SYSTEM "http://bugzilla.slpv2.org/bugzilla.dtd">
+<bugzilla version="3.0.4" urlbase="http://bugzilla.slpv2.org/" maintainer="david.mccormack@slpv2.org" exporter="David.McCormack@slpv2.org">
+
+    <bug>
+          <bug_id>71</bug_id>
+          
+          <creation_ts>2008-06-10 16:23</creation_ts>
+          <short_desc>Program crashes</short_desc>
+          <delta_ts>2008-11-14 13:44:13</delta_ts>
+          <reporter_accessible>1</reporter_accessible>
+          <cclist_accessible>1</cclist_accessible>
+          <classification_id>1</classification_id>
+          <classification>Unclassified</classification>
+          <product>MyProduct</product>
+          <component>MyComponent</component>
+          <version>0.7.1</version>
+          <rep_platform>All</rep_platform>
+          <op_sys>All</op_sys>
+          <bug_status>NEW</bug_status>
+          
+          
+          
+          
+          
+          <priority>P3</priority>
+          <bug_severity>normal</bug_severity>
+          <target_milestone>FUTURE</target_milestone>
+          
+          
+          
+          <everconfirmed>1</everconfirmed>
+          <reporter name="David McCormack">david.mccormack@slpv2.org</reporter>
+          <assigned_to name="David McCormack">david.mccormack@slpv2.org</assigned_to>
+          
+          <qa_contact name="Luc Gregoire">lucg@axentra.com</qa_contact>
+          <estimated_time>9.99</estimated_time>
+          <remaining_time>6.66</remaining_time>
+          <actual_time>3.33</actual_time>
+          
+          
+          
+          
+          
+
+      
+
+      
+          <long_desc isprivate="0">
+            <who name="David McCormack">david.mccormack@slpv2.org</who>
+            <bug_when>2008-06-10 16:23:54</bug_when>
+            <thetext>A comment in the bug.</thetext>
+          </long_desc>
+      
+    </bug>
+</bugzilla>

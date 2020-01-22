@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="us-ascii"?>
+
+<!DOCTYPE ProjectMapping >
+<ProjectMapping>
+
+  <!--
+  The following fields can't be configured in this mapping:
+    {ActualTime, CreationDate, OriginalTimeEstimate, RemainingTime}.
+  Custom Field support will be in a future version.
+  -->
+  <map>
+    <bugzilla>Owner</bugzilla>
+    <msproject>ResourceNames</msproject>
+  </map>
+  <map>
+    <bugzilla>Milestone</bugzilla>
+    <msproject>Text1</msproject>
+  </map>
+  <map>
+    <bugzilla>Summary</bugzilla>
+    <msproject>Name</msproject>
+  </map>
+  <map>
+    <bugzilla>Id</bugzilla>
+    <msproject>Number1</msproject>
+  </map>
+  <map>
+    <bugzilla>Status</bugzilla>
+    <msproject>Text2</msproject>
+  </map>
+  <map>
+    <bugzilla>Resolution</bugzilla>
+    <msproject>Text3</msproject>
+  </map>
+  <map>
+    <bugzilla>Severity</bugzilla>
+    <msproject>Text4</msproject>
+  </map>
+
+  <!-- 
+  Mapping of bugzilla priorites to project.  If you tinker with your 
+  bugzilla installation and change priorities, you will need to change this.
+  NOTE: In project, 0 is lowest priority and 1000 is highest.
+  -->
+  <map-priority>
+    <bugzilla>P1</bugzilla>
+    <msproject>900</msproject>
+  </map-priority>
+  <map-priority>
+    <bugzilla>P2</bugzilla>
+    <msproject>700</msproject>
+  </map-priority>
+  <map-priority>
+    <bugzilla>P3</bugzilla>
+    <msproject>500</msproject>
+  </map-priority>
+  <map-priority>
+    <bugzilla>P4</bugzilla>
+    <msproject>300</msproject>
+  </map-priority>
+  <map-priority>
+    <bugzilla>P5</bugzilla>
+    <msproject>100</msproject>
+  </map-priority>
+  <map-priority>
+    <bugzilla>undefined</bugzilla>
+    <msproject>501</msproject>
+  </map-priority>
+
+</ProjectMapping>
